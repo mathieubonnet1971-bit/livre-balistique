@@ -1,0 +1,280 @@
+%==============================================================================
+% Chapitre 35 - Facteurs de stabilité
+%==============================================================================
+
+\section{Introduction}
+
+Les chapitres précédents ont montré que la rotation joue un rôle essentiel
+dans la stabilité des projectiles modernes.
+
+Cependant, une question demeure :
+
+\begin{quote}
+Comment déterminer si la rotation est suffisante ?
+\end{quote}
+
+Pour répondre à cette question, les balisticiens utilisent différentes
+mesures de stabilité appelées facteurs de stabilité.
+
+\begin{aretenir}
+
+Les facteurs de stabilité permettent d'évaluer la capacité d'un projectile à
+maintenir une orientation correcte pendant son vol.
+
+\end{aretenir}
+
+\section{Pourquoi quantifier la stabilité ?}
+
+L'observation seule ne suffit pas toujours.
+
+Deux projectiles peuvent :
+
+\begin{itemize}
+    \item paraître stables à courte distance ;
+    \item se comporter différemment à longue distance ;
+    \item présenter des marges de stabilité très différentes.
+\end{itemize}
+
+Il est donc nécessaire de disposer d'indicateurs quantitatifs.
+
+\section{Stabilité insuffisante}
+
+Lorsqu'un projectile est insuffisamment stabilisé :
+
+\begin{itemize}
+    \item les oscillations augmentent ;
+    \item la précision se dégrade ;
+    \item la traînée augmente ;
+    \item le projectile peut devenir instable.
+\end{itemize}
+
+Dans les cas extrêmes, il peut culbuter.
+
+\section{Stabilité excessive}
+
+Une stabilité très importante n'est pas toujours idéale.
+
+Elle peut parfois :
+
+\begin{itemize}
+    \item augmenter certaines contraintes ;
+    \item réduire certaines performances ;
+    \item compliquer certains comportements dynamiques.
+\end{itemize}
+
+La conception d'un projectile repose donc sur un compromis.
+
+\section{Facteur de stabilité gyroscopique}
+
+L'indicateur le plus connu est le facteur de stabilité gyroscopique.
+
+Il est souvent noté :
+
+\begin{equation}
+S_g
+\end{equation}
+
+Cette grandeur permet d'évaluer si la rotation est suffisante pour assurer
+la stabilité du projectile.
+
+\section{Interprétation générale}
+
+De manière simplifiée :
+
+\begin{itemize}
+    \item $S_g < 1$ : stabilité insuffisante ;
+    \item $S_g \approx 1$ : limite de stabilité ;
+    \item $S_g > 1$ : stabilité acceptable.
+\end{itemize}
+
+Dans la pratique, des marges supplémentaires sont généralement recherchées.
+
+\section{Zone instable}
+
+Lorsque :
+
+\begin{equation}
+S_g < 1
+\end{equation}
+
+les moments déstabilisateurs dominent.
+
+Le projectile ne possède plus une stabilité gyroscopique suffisante.
+
+Sa précision devient imprévisible.
+
+\section{Zone marginale}
+
+Lorsque :
+
+\begin{equation}
+S_g \approx 1
+\end{equation}
+
+le projectile se situe à proximité de la limite de stabilité.
+
+De petites variations peuvent alors provoquer des changements importants de
+comportement.
+
+Cette situation est généralement évitée.
+
+\section{Zone de stabilité pratique}
+
+Dans de nombreux cas, on recherche :
+
+\begin{equation}
+1,3 \leq S_g \leq 2
+\end{equation}
+
+Cette plage offre généralement :
+
+\begin{itemize}
+    \item une bonne stabilité ;
+    \item une bonne précision ;
+    \item une marge de sécurité raisonnable.
+\end{itemize}
+
+\section{Facteurs influençant la stabilité}
+
+La stabilité dépend notamment :
+
+\begin{itemize}
+    \item de la longueur du projectile ;
+    \item de son diamètre ;
+    \item de sa masse ;
+    \item de sa vitesse ;
+    \item du pas de rayure ;
+    \item des conditions atmosphériques.
+\end{itemize}
+
+\section{Influence du pas de rayure}
+
+Le pas de rayure influence directement la vitesse de rotation.
+
+Un pas plus court produit généralement :
+
+\begin{itemize}
+    \item davantage de rotation ;
+    \item davantage de stabilité gyroscopique.
+\end{itemize}
+
+Cette relation explique l'importance du choix du canon.
+
+\section{Influence de la longueur}
+
+La longueur du projectile joue un rôle majeur.
+
+À calibre égal :
+
+\begin{itemize}
+    \item un projectile plus long nécessite généralement davantage de
+          stabilisation ;
+    \item un projectile plus court est plus facile à stabiliser.
+\end{itemize}
+
+Cette observation est fondamentale.
+
+\begin{aretenir}
+
+La longueur du projectile influence souvent davantage la stabilité que sa
+masse.
+
+\end{aretenir}
+
+\section{Influence de la vitesse}
+
+La vitesse initiale agit également sur la stabilité.
+
+Une diminution de vitesse entraîne généralement :
+
+\begin{itemize}
+    \item une diminution de la rotation ;
+    \item une évolution des forces aérodynamiques ;
+    \item une modification du comportement dynamique.
+\end{itemize}
+
+\section{Influence de l'atmosphère}
+
+Les propriétés de l'air jouent également un rôle.
+
+La stabilité dépend notamment :
+
+\begin{itemize}
+    \item de la température ;
+    \item de la pression ;
+    \item de la densité de l'air.
+\end{itemize}
+
+Un même projectile peut présenter des comportements différents selon les
+conditions environnementales.
+
+\section{Facteurs de stabilité statique et dynamique}
+
+Plusieurs notions de stabilité coexistent.
+
+On distingue notamment :
+
+\begin{itemize}
+    \item la stabilité statique ;
+    \item la stabilité gyroscopique ;
+    \item la stabilité dynamique.
+\end{itemize}
+
+Ces notions sont complémentaires.
+
+\section{Mesure pratique}
+
+La stabilité peut être évaluée :
+
+\begin{itemize}
+    \item par calcul ;
+    \item par simulation ;
+    \item par essais expérimentaux.
+\end{itemize}
+
+Les trois approches sont souvent combinées.
+
+\section{Importance pour le tireur}
+
+La stabilité influence directement :
+
+\begin{itemize}
+    \item la précision ;
+    \item la dispersion ;
+    \item la portée utile ;
+    \item les performances terminales.
+\end{itemize}
+
+Le choix d'un projectile adapté au pas de rayure constitue donc un élément
+essentiel.
+
+\section{Vers les formules de calcul}
+
+Les balisticiens ont développé plusieurs méthodes permettant d'estimer la
+stabilité.
+
+Parmi les plus connues :
+
+\begin{itemize}
+    \item la formule de Greenhill ;
+    \item la formule de Miller ;
+    \item les modèles modernes.
+\end{itemize}
+
+Nous commencerons par la formule de Greenhill, qui constitue l'une des
+approches historiques les plus célèbres.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item Le facteur de stabilité permet d'évaluer la stabilité du
+          projectile.
+    \item Une valeur proche de 1 correspond à la limite de stabilité.
+    \item La longueur du projectile joue un rôle majeur.
+    \item Le pas de rayure influence directement la stabilité.
+    \item Les conditions atmosphériques modifient également le résultat.
+\end{itemize}
+
+\end{aretenir}

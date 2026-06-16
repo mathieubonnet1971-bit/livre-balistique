@@ -1,0 +1,215 @@
+%==============================================================================
+% Chapitre 6 - Atmosphère standard
+%==============================================================================
+
+\section{Introduction}
+
+Lorsqu'un projectile quitte le canon d'une arme, il ne se déplace pas dans le
+vide.
+
+Il évolue au sein de l'atmosphère terrestre, un milieu dont les propriétés
+varient continuellement.
+
+La température, la pression et la densité de l'air influencent directement
+les performances balistiques.
+
+Afin de disposer d'une référence commune, les ingénieurs et les scientifiques
+utilisent un modèle appelé \emph{atmosphère standard}.
+
+Ce modèle permet de comparer des résultats obtenus dans des conditions
+différentes et constitue la base de nombreux calculs balistiques.
+
+\begin{aretenir}
+
+L'atmosphère standard est un modèle de référence.
+
+Elle ne décrit pas exactement l'atmosphère réelle à un instant donné, mais
+fournit une base commune pour les calculs et les comparaisons.
+
+\end{aretenir}
+
+\section{Pourquoi définir une atmosphère standard ?}
+
+Les conditions météorologiques changent constamment.
+
+Au cours d'une même journée, la température, la pression et l'humidité peuvent
+évoluer de manière significative.
+
+Si aucun modèle de référence n'existait, il serait difficile :
+
+\begin{itemize}
+\item de comparer des essais ;
+\item de construire des tables balistiques ;
+\item de développer des modèles numériques ;
+\item de comparer les performances de différentes munitions.
+\end{itemize}
+
+L'atmosphère standard fournit donc un environnement de référence dans lequel
+les calculs peuvent être réalisés.
+
+\section{Atmosphère standard internationale}
+
+Le modèle le plus utilisé est l'\emph{International Standard Atmosphere}
+(ISA).
+
+Ce modèle définit notamment :
+
+\begin{itemize}
+\item la température ;
+\item la pression ;
+\item la densité de l'air ;
+\item la vitesse du son ;
+\end{itemize}
+
+en fonction de l'altitude.
+
+\section{Conditions de référence au niveau de la mer}
+
+Dans le modèle ISA, les conditions de référence au niveau moyen de la mer sont :
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Grandeur & Valeur \\
+\midrule
+Altitude & 0 m \\
+Température & 15°C \\
+Pression & 101,325 Pa \\
+Densité de l'air & 1,225 kg/m$^3$ \\
+Vitesse du son & 340 à 343 m/s \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Ces valeurs seront fréquemment utilisées dans les chapitres suivants.
+
+\section{Variation avec l'altitude}
+
+L'atmosphère n'est pas homogène.
+
+Lorsque l'altitude augmente :
+
+\begin{itemize}
+\item la pression diminue ;
+\item la densité diminue ;
+\item la température évolue.
+\end{itemize}
+
+Pour un projectile, cela signifie que l'air oppose généralement moins de
+résistance à haute altitude.
+
+\begin{exemple}
+
+À 2,000 mètres d'altitude, un projectile conserve généralement mieux sa
+vitesse qu'au niveau de la mer.
+
+La portée et la trajectoire peuvent alors être sensiblement modifiées.
+
+\end{exemple}
+
+\section{Influence sur la balistique}
+
+Les conditions atmosphériques influencent directement :
+
+\begin{itemize}
+\item la traînée ;
+\item le temps de vol ;
+\item la chute du projectile ;
+\item la dérive due au vent ;
+\item la vitesse résiduelle ;
+\item la portée utile.
+\end{itemize}
+
+Deux tirs réalisés avec la même arme et la même munition peuvent donc produire
+des résultats différents si les conditions atmosphériques changent.
+
+\section{Altitude-densité}
+
+En aéronautique et en balistique, il est souvent plus utile de considérer
+la densité réelle de l'air que l'altitude géométrique.
+
+On parle alors d'\emph{altitude-densité}.
+
+Cette grandeur tient compte simultanément :
+
+\begin{itemize}
+\item de l'altitude ;
+\item de la température ;
+\item de la pression.
+\end{itemize}
+
+Deux lieux situés à la même altitude géométrique peuvent présenter des
+altitudes-densité très différentes.
+
+\begin{exemple}
+
+Une journée très chaude en montagne peut produire une altitude-densité
+supérieure à celle observée lors d'une journée froide à une altitude pourtant
+plus élevée.
+
+\end{exemple}
+
+\section{Atmosphère réelle et atmosphère standard}
+
+L'atmosphère standard n'est qu'un modèle.
+
+Les conditions réelles peuvent s'en écarter significativement.
+
+Les calculateurs balistiques modernes permettent généralement de renseigner :
+
+\begin{itemize}
+\item la température ;
+\item la pression ;
+\item l'humidité ;
+\item l'altitude.
+\end{itemize}
+
+Ils utilisent alors ces données pour corriger les calculs.
+
+\section{Application aux essais}
+
+Lors d'une campagne d'essais, les conditions atmosphériques doivent être
+enregistrées avec soin.
+
+Les paramètres les plus fréquemment relevés sont :
+
+\begin{itemize}
+\item la température ;
+\item la pression atmosphérique ;
+\item l'humidité ;
+\item la vitesse du vent ;
+\item la direction du vent.
+\end{itemize}
+
+Ces informations permettent :
+
+\begin{itemize}
+\item de reproduire les essais ;
+\item d'expliquer certaines dispersions ;
+\item de comparer les résultats à des simulations.
+\end{itemize}
+
+\begin{simulation}
+
+La plupart des moteurs balistiques utilisent par défaut une atmosphère
+standard.
+
+Les modèles les plus avancés permettent de modifier les paramètres
+atmosphériques afin de reproduire plus fidèlement les conditions réelles.
+
+\end{simulation}
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+\item L'atmosphère standard est un modèle de référence.
+\item Le modèle ISA est largement utilisé en aéronautique et en balistique.
+\item La pression et la densité diminuent généralement avec l'altitude.
+\item Les conditions atmosphériques influencent directement les trajectoires.
+\item Les essais balistiques doivent toujours être associés à des mesures météorologiques.
+\end{itemize}
+
+\end{aretenir}
+

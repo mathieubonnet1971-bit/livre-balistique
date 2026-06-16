@@ -1,0 +1,264 @@
+%==============================================================================
+% Chapitre 37 - La formule de Miller
+%==============================================================================
+
+\section{Introduction}
+
+La formule de Greenhill constitue une méthode simple permettant d'estimer le
+pas de rayure nécessaire à la stabilisation d'un projectile.
+
+Cependant, elle présente plusieurs limitations et ne fournit pas directement
+une estimation du facteur de stabilité gyroscopique.
+
+Afin d'améliorer cette approche, Don Miller a proposé au début du XXI\ieme\
+siècle une nouvelle méthode mieux adaptée aux projectiles modernes.
+
+\begin{aretenir}
+
+La formule de Miller permet d'estimer directement le facteur de stabilité
+gyroscopique d'un projectile.
+
+\end{aretenir}
+
+\section{Objectif de la formule}
+
+La formule de Miller vise à répondre à la question suivante :
+
+\begin{quote}
+Le projectile est-il suffisamment stabilisé par le canon utilisé ?
+\end{quote}
+
+La réponse est obtenue sous la forme d'un facteur de stabilité :
+
+\begin{equation}
+S_g
+\end{equation}
+
+dont l'interprétation a été présentée au chapitre précédent.
+
+\section{Principe général}
+
+La formule prend en compte plusieurs paramètres :
+
+\begin{itemize}
+    \item la masse du projectile ;
+    \item son diamètre ;
+    \item sa longueur ;
+    \item le pas de rayure ;
+    \item les conditions atmosphériques.
+\end{itemize}
+
+Elle est donc plus représentative que la formule de Greenhill.
+
+\section{Version simplifiée}
+
+Une forme simplifiée de la formule peut s'écrire :
+
+\begin{equation}
+S_g=
+\frac{30m}
+     {d^3l(1+l^2)}
+\left(\frac{t}{10}\right)^2
+\left(\frac{V}{2800}\right)^{1/3}
+\end{equation}
+
+où :
+
+\begin{itemize}
+    \item $m$ représente la masse du projectile ;
+    \item $d$ représente le diamètre ;
+    \item $l$ représente la longueur exprimée en calibres ;
+    \item $t$ représente le pas de rayure ;
+    \item $V$ représente la vitesse initiale.
+\end{itemize}
+
+\section{Remarque importante}
+
+La formule existe sous plusieurs variantes.
+
+Les logiciels balistiques modernes utilisent souvent des versions modifiées
+tenant compte :
+
+\begin{itemize}
+    \item de la densité de l'air ;
+    \item de la température ;
+    \item de la pression atmosphérique ;
+    \item de la forme du projectile.
+\end{itemize}
+
+Les équations exactes peuvent donc varier légèrement selon les sources.
+
+\section{Influence de la masse}
+
+La stabilité augmente généralement avec la masse du projectile.
+
+Toutefois, la masse n'est pas le paramètre dominant.
+
+Deux projectiles de même masse peuvent présenter des stabilités très
+différentes.
+
+\section{Influence de la longueur}
+
+La longueur joue un rôle majeur.
+
+Plus un projectile est long :
+
+\begin{itemize}
+    \item plus il est difficile à stabiliser ;
+    \item plus il nécessite une rotation importante.
+\end{itemize}
+
+Cette observation rejoint les conclusions obtenues avec Greenhill.
+
+\begin{aretenir}
+
+La longueur du projectile constitue l'un des paramètres les plus influents
+pour la stabilité.
+
+\end{aretenir}
+
+\section{Influence du diamètre}
+
+Le diamètre intervient également dans le calcul.
+
+À longueur égale :
+
+\begin{itemize}
+    \item un projectile de plus gros diamètre est généralement plus facile à
+          stabiliser ;
+    \item un projectile de faible diamètre nécessite davantage de rotation.
+\end{itemize}
+
+\section{Influence du pas de rayure}
+
+Le pas de rayure agit directement sur la vitesse de rotation.
+
+Un pas plus court :
+
+\begin{itemize}
+    \item augmente la vitesse de rotation ;
+    \item augmente généralement la stabilité gyroscopique.
+\end{itemize}
+
+Cette relation explique l'intérêt de choisir un pas adapté au projectile.
+
+\section{Influence de la vitesse}
+
+La vitesse initiale intervient également.
+
+Lorsque la vitesse augmente :
+
+\begin{itemize}
+    \item la rotation augmente ;
+    \item certains effets aérodynamiques évoluent ;
+    \item la stabilité peut être modifiée.
+\end{itemize}
+
+\section{Influence de l'atmosphère}
+
+L'atmosphère joue un rôle important.
+
+La stabilité dépend notamment :
+
+\begin{itemize}
+    \item de la température ;
+    \item de la pression ;
+    \item de l'altitude ;
+    \item de la densité de l'air.
+\end{itemize}
+
+C'est pourquoi un projectile peut se comporter différemment selon le lieu de
+tir.
+
+\section{Exemple qualitatif}
+
+Considérons deux projectiles de même calibre :
+
+\begin{itemize}
+    \item projectile A : court ;
+    \item projectile B : long.
+\end{itemize}
+
+À vitesse et pas de rayure identiques :
+
+\begin{itemize}
+    \item le projectile A présentera généralement un facteur de stabilité
+          plus élevé ;
+    \item le projectile B sera plus difficile à stabiliser.
+\end{itemize}
+
+\section{Interprétation du facteur de stabilité}
+
+Les valeurs suivantes sont souvent utilisées comme repères :
+
+\begin{itemize}
+    \item $S_g < 1$ : instable ;
+    \item $S_g \approx 1$ : stabilité marginale ;
+    \item $1,3 < S_g < 2$ : zone généralement recherchée ;
+    \item $S_g > 2$ : stabilité élevée.
+\end{itemize}
+
+Ces limites doivent être considérées comme des ordres de grandeur.
+
+\section{Avantages de la formule}
+
+Par rapport à Greenhill, la formule de Miller :
+
+\begin{itemize}
+    \item prend davantage de paramètres en compte ;
+    \item fournit directement un facteur de stabilité ;
+    \item est mieux adaptée aux projectiles modernes.
+\end{itemize}
+
+\section{Limites de la formule}
+
+Malgré ses qualités, la formule reste une approximation.
+
+Elle ne remplace pas :
+
+\begin{itemize}
+    \item les essais réels ;
+    \item les mesures expérimentales ;
+    \item les simulations avancées.
+\end{itemize}
+
+Les phénomènes dynamiques complexes ne sont pas entièrement représentés.
+
+\section{Utilisation pratique}
+
+La formule de Miller est largement utilisée :
+
+\begin{itemize}
+    \item par les tireurs ;
+    \item par les rechargeurs ;
+    \item par les concepteurs de projectiles.
+\end{itemize}
+
+Elle constitue souvent un excellent point de départ pour évaluer la
+compatibilité entre un projectile et un canon.
+
+\section{Lien avec la stabilité dynamique}
+
+La formule de Miller évalue essentiellement la stabilité gyroscopique.
+
+Cependant, un projectile peut être gyroscopiquement stable tout en présentant
+des comportements dynamiques indésirables.
+
+Pour comprendre ces phénomènes, il faut introduire la notion de stabilité
+dynamique.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item La formule de Miller estime directement le facteur de stabilité
+          gyroscopique.
+    \item Elle est plus complète que la formule de Greenhill.
+    \item La longueur du projectile joue un rôle majeur.
+    \item Les conditions atmosphériques influencent le résultat.
+    \item Une bonne stabilité gyroscopique ne garantit pas à elle seule un
+          comportement dynamique parfait.
+\end{itemize}
+
+\end{aretenir}

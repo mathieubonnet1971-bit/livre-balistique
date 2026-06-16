@@ -1,0 +1,269 @@
+%==============================================================================
+% Chapitre 22 - Systèmes de conduite de tir
+%==============================================================================
+
+\section{Introduction}
+
+Un système de conduite de tir (SCT) est un ensemble de moyens destinés à
+assister le tireur dans l'engagement d'une cible.
+
+Son objectif est de déterminer la solution de tir la plus appropriée à partir
+des informations disponibles.
+
+Les systèmes modernes combinent généralement :
+
+\begin{itemize}
+    \item des capteurs ;
+    \item des calculateurs ;
+    \item des systèmes optiques ;
+    \item des interfaces homme-machine ;
+    \item des dispositifs de pointage.
+\end{itemize}
+
+\begin{aretenir}
+
+Un système de conduite de tir transforme des informations de mesure en
+corrections de tir exploitables.
+
+\end{aretenir}
+
+\section{Évolution historique}
+
+Les premiers systèmes de conduite de tir reposaient essentiellement sur des
+tables de tir et des calculs manuels.
+
+Avec le développement de l'électronique sont apparus :
+
+\begin{itemize}
+    \item les calculateurs analogiques ;
+    \item les calculateurs numériques ;
+    \item les systèmes automatisés ;
+    \item les systèmes intégrés modernes.
+\end{itemize}
+
+Aujourd'hui, certains systèmes sont capables de calculer une solution de tir
+en quelques fractions de seconde.
+
+\section{Fonctions principales}
+
+Un système de conduite de tir doit généralement :
+
+\begin{enumerate}
+    \item acquérir les données nécessaires ;
+    \item calculer une solution balistique ;
+    \item assister le pointage ;
+    \item suivre la cible ;
+    \item enregistrer certaines informations.
+\end{enumerate}
+
+Selon les applications, certaines fonctions peuvent être absentes ou
+automatisées.
+
+\section{Les données d'entrée}
+
+Le calcul d'une solution de tir nécessite de nombreuses informations.
+
+Parmi les plus courantes :
+
+\begin{itemize}
+    \item distance à la cible ;
+    \item vitesse de la cible ;
+    \item direction de déplacement ;
+    \item vitesse initiale ;
+    \item conditions atmosphériques ;
+    \item caractéristiques du projectile ;
+    \item position géographique.
+\end{itemize}
+
+\section{Mesure de la distance}
+
+La distance constitue souvent l'information la plus importante.
+
+Elle peut être obtenue par :
+
+\begin{itemize}
+    \item estimation visuelle ;
+    \item télémètre optique ;
+    \item télémètre laser ;
+    \item systèmes radar.
+\end{itemize}
+
+Une erreur sur la distance peut entraîner une erreur importante sur la
+solution de tir.
+
+\section{Mesure des conditions atmosphériques}
+
+Les systèmes modernes peuvent intégrer :
+
+\begin{itemize}
+    \item température ;
+    \item pression ;
+    \item humidité ;
+    \item vent.
+\end{itemize}
+
+Ces informations permettent d'améliorer la précision des calculs
+balistiques.
+
+\section{Capteurs d'attitude}
+
+La plateforme peut être inclinée ou en mouvement.
+
+Des capteurs spécifiques permettent de mesurer :
+
+\begin{itemize}
+    \item roulis ;
+    \item tangage ;
+    \item lacet ;
+    \item accélérations.
+\end{itemize}
+
+Ces informations sont essentielles pour les plateformes mobiles.
+
+\section{Le calculateur balistique}
+
+Le calculateur constitue le cœur du système.
+
+Son rôle consiste à déterminer :
+
+\begin{itemize}
+    \item la correction en site ;
+    \item la correction en dérive ;
+    \item l'avance sur cible mobile ;
+    \item diverses corrections complémentaires.
+\end{itemize}
+
+Le niveau de complexité dépend fortement de l'application considérée.
+
+\section{Solution de tir}
+
+La solution de tir correspond à l'ensemble des corrections nécessaires pour
+atteindre la cible.
+
+Elle peut inclure :
+
+\begin{itemize}
+    \item la chute du projectile ;
+    \item l'effet du vent ;
+    \item le mouvement de la cible ;
+    \item le mouvement de la plateforme ;
+    \item les effets géophysiques.
+\end{itemize}
+
+\section{Cibles mobiles}
+
+L'engagement d'une cible mobile nécessite l'introduction d'une avance.
+
+Cette avance dépend notamment :
+
+\begin{itemize}
+    \item du temps de vol ;
+    \item de la vitesse de la cible ;
+    \item de sa direction de déplacement.
+\end{itemize}
+
+\begin{exemple}
+
+Une cible se déplaçant perpendiculairement à la ligne de tir nécessite une
+avance plus importante qu'une cible se déplaçant directement vers le tireur.
+
+\end{exemple}
+
+\section{Suivi automatique}
+
+Les systèmes avancés peuvent assurer le suivi automatique d'une cible.
+
+Ils utilisent généralement :
+
+\begin{itemize}
+    \item des algorithmes de poursuite ;
+    \item des caméras ;
+    \item des capteurs optroniques ;
+    \item des radars.
+\end{itemize}
+
+Ces fonctions sont particulièrement répandues sur les plateformes modernes.
+
+\section{Stabilisation et conduite de tir}
+
+Le système de conduite de tir travaille souvent en liaison avec le système
+de stabilisation.
+
+Les deux systèmes échangent des informations afin de :
+
+\begin{itemize}
+    \item maintenir la visée ;
+    \item compenser les mouvements ;
+    \item améliorer la précision.
+\end{itemize}
+
+\section{Architecture moderne}
+
+Un système moderne comprend souvent :
+
+\begin{itemize}
+    \item une centrale inertielle ;
+    \item un télémètre laser ;
+    \item plusieurs capteurs météorologiques ;
+    \item un calculateur balistique ;
+    \item des viseurs optroniques ;
+    \item des interfaces utilisateur.
+\end{itemize}
+
+L'ensemble fonctionne comme un système intégré.
+
+\section{Conduite de tir et simulation}
+
+Les systèmes de simulation reproduisent fréquemment tout ou partie d'un SCT.
+
+Ils peuvent modéliser :
+
+\begin{itemize}
+    \item les capteurs ;
+    \item les erreurs de mesure ;
+    \item les algorithmes ;
+    \item les délais de calcul ;
+    \item les interfaces opérateur.
+\end{itemize}
+
+Cette modélisation est essentielle pour les simulateurs d'entraînement.
+
+\begin{simulation}
+
+Dans certains simulateurs, le moteur balistique et le système de conduite de
+tir sont séparés.
+
+Le SCT fournit une solution de tir tandis que le moteur balistique calcule
+la trajectoire réelle du projectile.
+
+\end{simulation}
+
+\section{Limites des systèmes de conduite de tir}
+
+Même les systèmes les plus avancés présentent des limites.
+
+Les erreurs peuvent provenir :
+
+\begin{itemize}
+    \item des mesures ;
+    \item des modèles utilisés ;
+    \item des capteurs ;
+    \item des hypothèses de calcul.
+\end{itemize}
+
+La qualité d'une solution dépend directement de la qualité des données
+d'entrée.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item Un SCT calcule une solution de tir à partir de données mesurées.
+    \item Le calculateur balistique constitue le cœur du système.
+    \item Les capteurs fournissent les informations nécessaires au calcul.
+    \item Les cibles mobiles nécessitent une avance de tir.
+    \item La qualité d'une solution dépend de la qualité des mesures.
+\end{itemize}
+
+\end{aretenir}

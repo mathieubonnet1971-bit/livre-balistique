@@ -1,0 +1,232 @@
+%==============================================================================
+% Chapitre 32 - Précession
+%==============================================================================
+
+\section{Introduction}
+
+Dans le chapitre précédent, nous avons vu qu'un projectile en rotation se
+comporte comme un gyroscope.
+
+Cette propriété lui confère une stabilité importante.
+
+Cependant, un gyroscope ne réagit pas aux forces extérieures de manière
+intuitive.
+
+Lorsqu'un moment est appliqué, le mouvement observé apparaît souvent dans une
+direction différente de celle attendue.
+
+Ce phénomène est appelé précession.
+
+\begin{aretenir}
+
+La précession est le mouvement lent de rotation de l'axe d'un projectile sous
+l'effet d'un moment extérieur.
+
+\end{aretenir}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+
+\draw[dashed] (0,-2) -- (0,2);
+
+\draw[thick] (0,0) -- (2,1.5);
+
+\draw[dashed] (0,0) circle (1);
+
+\draw[->] (1,0) arc (0:60:1);
+
+\node at (2.5,1.7) {Axe du projectile};
+
+\end{tikzpicture}
+\caption{Principe de la précession.}
+\label{fig:precession}
+\end{figure}
+
+\section{Exemple de la toupie}
+
+Une toupie constitue l'exemple le plus connu.
+
+Lorsque la gravité agit sur elle :
+
+\begin{itemize}
+    \item elle ne tombe pas immédiatement ;
+    \item son axe tourne progressivement ;
+    \item elle décrit un cône dans l'espace.
+\end{itemize}
+
+Ce mouvement correspond à la précession.
+
+\section{Pourquoi est-ce contre-intuitif ?}
+
+Pour un objet immobile :
+
+\begin{itemize}
+    \item une force produit une accélération dans la direction de cette force.
+\end{itemize}
+
+Pour un objet en rotation rapide :
+
+\begin{itemize}
+    \item la réponse est décalée ;
+    \item le mouvement apparaît dans une autre direction.
+\end{itemize}
+
+C'est une conséquence directe de la conservation du moment cinétique.
+
+\section{Application aux projectiles}
+
+Pendant son vol, un projectile subit constamment :
+
+\begin{itemize}
+    \item des forces aérodynamiques ;
+    \item des moments aérodynamiques ;
+    \item des perturbations diverses.
+\end{itemize}
+
+Ces actions tendent à modifier son orientation.
+
+En raison de sa rotation, la réponse prend la forme d'une précession.
+
+\section{Incidence et précession}
+
+Supposons qu'un projectile acquière une faible incidence.
+
+L'écoulement d'air génère alors un moment aérodynamique.
+
+Au lieu de simplement pivoter dans la direction attendue, le projectile
+commence à précessionner.
+
+Son axe effectue un mouvement lent autour de la direction moyenne du vol.
+
+\section{Mouvement conique}
+
+La précession peut être visualisée comme un mouvement conique.
+
+L'extrémité de l'axe du projectile décrit une trajectoire proche d'un cercle.
+
+Vu depuis l'avant, l'axe semble tourner autour de la trajectoire moyenne.
+
+\section{Précession lente et précession rapide}
+
+Les modèles avancés distinguent plusieurs composantes de précession.
+
+On rencontre notamment :
+
+\begin{itemize}
+    \item une précession lente ;
+    \item une précession rapide.
+\end{itemize}
+
+Ces composantes dépendent des caractéristiques du projectile et de sa
+rotation.
+
+\section{Précession et stabilité}
+
+La précession n'est pas nécessairement un signe d'instabilité.
+
+Au contraire :
+
+\begin{itemize}
+    \item elle fait partie du comportement normal d'un projectile stabilisé ;
+    \item elle constitue une réponse naturelle aux moments appliqués.
+\end{itemize}
+
+\section{Amplitude de la précession}
+
+L'amplitude dépend notamment :
+
+\begin{itemize}
+    \item de la vitesse de rotation ;
+    \item de la stabilité gyroscopique ;
+    \item de l'intensité des perturbations ;
+    \item des propriétés aérodynamiques.
+\end{itemize}
+
+\section{Effet de la vitesse de rotation}
+
+Une rotation élevée tend généralement à réduire certaines variations
+d'orientation.
+
+Le projectile résiste davantage aux perturbations.
+
+Cependant, la relation exacte reste plus complexe qu'une simple augmentation
+de la vitesse de rotation.
+
+\section{Précession aérodynamique}
+
+Dans le cas des projectiles, la précession est principalement entretenue par
+les forces aérodynamiques.
+
+Ces forces évoluent continuellement au cours du vol.
+
+Le phénomène est donc dynamique.
+
+\section{Amortissement}
+
+L'atmosphère agit également comme un mécanisme d'amortissement.
+
+Certaines oscillations diminuent progressivement.
+
+Le projectile tend alors vers un comportement plus stable.
+
+\section{Influence sur la trajectoire}
+
+La précession modifie légèrement l'orientation du projectile.
+
+Elle peut contribuer à :
+
+\begin{itemize}
+    \item certaines dérives ;
+    \item certains mouvements oscillatoires ;
+    \item l'apparition d'effets secondaires.
+\end{itemize}
+
+\section{Lien avec le spin drift}
+
+La précession joue un rôle important dans l'apparition du spin drift.
+
+Ce phénomène sera étudié dans un chapitre spécifique.
+
+\section{Précession et simulation}
+
+Les modèles simples ignorent généralement la précession.
+
+Les modèles avancés la reproduisent explicitement.
+
+Elle constitue l'un des phénomènes caractéristiques des modèles :
+
+\begin{itemize}
+    \item 5DOF ;
+    \item 6DOF.
+\end{itemize}
+
+\begin{simulation}
+
+La précession est souvent utilisée pour vérifier la cohérence d'un modèle
+balistique avancé.
+
+\end{simulation}
+
+\section{Vers la nutation}
+
+La précession décrit un mouvement relativement lent et régulier.
+
+Cependant, un projectile réel présente souvent une seconde oscillation,
+plus rapide et généralement plus faible.
+
+Cette oscillation est appelée nutation.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item La précession est une conséquence directe de l'effet gyroscopique.
+    \item Elle correspond à une rotation lente de l'axe du projectile.
+    \item Elle apparaît lorsqu'un moment agit sur un projectile en rotation.
+    \item Elle ne signifie pas nécessairement que le projectile est instable.
+    \item Elle intervient dans plusieurs phénomènes balistiques avancés.
+\end{itemize}
+
+\end{aretenir}

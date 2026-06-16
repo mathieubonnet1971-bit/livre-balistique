@@ -1,0 +1,232 @@
+%==============================================================================
+% Chapitre 4 - Gravitation
+%==============================================================================
+
+\section{Introduction}
+
+La gravitation est l'un des phénomènes physiques les plus familiers.
+
+C'est elle qui maintient les objets à la surface de la Terre et qui est
+responsable de la chute des corps.
+
+En balistique, la gravité constitue l'une des principales forces agissant sur
+un projectile après sa sortie du canon.
+
+Sans gravité, un projectile poursuivrait son mouvement selon sa direction
+initiale.
+
+\begin{aretenir}
+
+La gravité est responsable de la chute des projectiles.
+
+Elle agit en permanence pendant toute la durée du vol.
+
+\end{aretenir}
+
+\section{Observation intuitive}
+
+Lorsqu'un objet est lâché sans vitesse initiale, il tombe vers le sol.
+
+Cette observation est connue depuis l'Antiquité.
+
+Une expérience de pensée permet de comprendre l'influence de la gravité sur
+les trajectoires.
+
+Imaginons deux projectiles :
+
+\begin{itemize}
+\item le premier est simplement lâché ;
+\item le second est tiré horizontalement.
+\end{itemize}
+
+Tous deux subissent la même accélération gravitationnelle.
+
+Ils touchent donc le sol au même instant si l'on néglige la résistance de
+l'air.
+
+\section{La chute libre}
+
+On parle de chute libre lorsqu'un objet est soumis uniquement à la gravité.
+
+Dans ce cas idéal :
+
+\begin{itemize}
+\item aucun frottement n'est pris en compte ;
+\item aucune autre force n'agit sur l'objet.
+\end{itemize}
+
+La chute libre constitue un modèle simplifié extrêmement utile pour comprendre
+les trajectoires.
+
+\section{Accélération gravitationnelle}
+
+À proximité de la surface terrestre, tous les objets subissent
+approximativement la même accélération gravitationnelle.
+
+Cette accélération est notée $g$.
+
+Sa valeur moyenne est :
+
+\begin{equation}
+g \approx 9,81~\mathrm{m/s^2}
+\label{eq:gravitation_g}
+\end{equation}
+
+Cela signifie que la vitesse verticale d'un objet augmente d'environ
+9,81~m/s chaque seconde.
+
+\begin{exemple}
+
+Après une seconde de chute libre :
+
+\begin{itemize}
+\item vitesse verticale : environ 9,81~m/s ;
+\end{itemize}
+
+Après deux secondes :
+
+\begin{itemize}
+\item vitesse verticale : environ 19,62~m/s.
+\end{itemize}
+
+\end{exemple}
+
+\section{Poids et masse}
+
+La masse et le poids sont souvent confondus.
+
+La masse représente la quantité de matière contenue dans un objet.
+
+Elle s'exprime en kilogrammes.
+
+Le poids correspond à la force exercée par la gravité sur cet objet.
+
+\begin{rigueur}
+
+Le poids est donné par :
+
+\begin{equation}
+P = m,g
+\label{eq:poids}
+\end{equation}
+
+où :
+
+\begin{itemize}
+\item $P$ représente le poids ;
+\item $m$ représente la masse ;
+\item $g$ représente l'accélération gravitationnelle.
+\end{itemize}
+
+\end{rigueur}
+
+\section{Influence sur les trajectoires}
+
+La gravité agit continuellement sur les projectiles.
+
+Même lorsqu'une arme est tirée parfaitement à l'horizontale, le projectile
+commence immédiatement à perdre de l'altitude.
+
+Cette chute existe dès la sortie du canon.
+
+À courte distance, elle est faible.
+
+À longue distance, elle devient l'un des phénomènes dominants.
+
+\begin{exemple}
+
+Une balle de 7,62~mm quittant le canon à 850~m/s ne parcourt pas une ligne
+droite.
+
+Sa trajectoire s'incurve progressivement vers le sol sous l'effet de la
+gravité.
+
+\end{exemple}
+
+\section{Trajectoire idéale}
+
+Dans un modèle simplifié :
+
+\begin{itemize}
+\item la gravité est prise en compte ;
+\item la résistance de l'air est négligée.
+\end{itemize}
+
+La trajectoire obtenue est une parabole.
+
+Ce modèle est très utile pour comprendre les principes fondamentaux.
+
+Cependant, les trajectoires réelles s'écartent progressivement de cette forme
+à cause de la traînée aérodynamique.
+
+\section{Influence de l'altitude}
+
+La valeur de $g$ n'est pas parfaitement constante.
+
+Elle varie légèrement :
+
+\begin{itemize}
+\item avec l'altitude ;
+\item avec la latitude ;
+\item avec la forme de la Terre.
+\end{itemize}
+
+Pour les armes légères, ces variations sont généralement négligeables.
+
+Elles deviennent toutefois importantes dans certains domaines :
+
+\begin{itemize}
+\item artillerie ;
+\item missiles ;
+\item applications spatiales.
+\end{itemize}
+
+\section{Application à la balistique}
+
+La gravité intervient dans :
+
+\begin{itemize}
+\item la chute du projectile ;
+\item le réglage des organes de visée ;
+\item la détermination des points sécants ;
+\item le calcul des tables balistiques ;
+\item les modèles numériques.
+\end{itemize}
+
+Elle constitue généralement le premier phénomène physique intégré dans un
+modèle balistique.
+
+\begin{simulation}
+
+Le modèle balistique le plus simple consiste à appliquer uniquement la
+gravité.
+
+Même si ce modèle est très éloigné de la réalité, il permet déjà d'obtenir
+une trajectoire approchée.
+
+La plupart des moteurs balistiques commencent par ce modèle avant d'ajouter
+progressivement :
+
+\begin{itemize}
+\item la traînée ;
+\item le vent ;
+\item la rotation terrestre ;
+\item les effets gyroscopiques.
+\end{itemize}
+
+\end{simulation}
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+\item La gravité agit en permanence sur le projectile.
+\item L'accélération gravitationnelle moyenne vaut environ 9,81~m/s$^2$.
+\item La masse et le poids sont deux notions différentes.
+\item La gravité provoque la chute des projectiles.
+\item Sans résistance de l'air, la trajectoire est parabolique.
+\end{itemize}
+
+\end{aretenir}
+

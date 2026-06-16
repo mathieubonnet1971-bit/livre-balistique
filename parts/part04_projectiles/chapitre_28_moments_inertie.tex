@@ -1,0 +1,286 @@
+%==============================================================================
+% Chapitre 28 - Moments d'inertie
+%==============================================================================
+
+\section{Introduction}
+
+Dans les chapitres précédents, nous avons étudié :
+
+\begin{itemize}
+    \item la masse ;
+    \item le centre de gravité ;
+    \item le centre de pression.
+\end{itemize}
+
+Cependant, deux projectiles possédant la même masse totale et le même centre
+de gravité peuvent réagir différemment à une perturbation.
+
+Cette différence provient notamment de la manière dont la masse est répartie
+dans le volume du projectile.
+
+Cette propriété est décrite par les moments d'inertie.
+
+\begin{aretenir}
+
+Le moment d'inertie caractérise la résistance d'un corps à une modification
+de son mouvement de rotation.
+
+\end{aretenir}
+
+\section{Analogie avec la masse}
+
+En mouvement de translation :
+
+\begin{itemize}
+    \item la masse mesure la résistance à l'accélération.
+\end{itemize}
+
+En mouvement de rotation :
+
+\begin{itemize}
+    \item le moment d'inertie mesure la résistance à l'accélération
+          angulaire.
+\end{itemize}
+
+Les deux notions jouent des rôles analogues.
+
+\section{Exemple intuitif}
+
+Considérons une haltère.
+
+Si la masse est concentrée près du centre :
+
+\begin{itemize}
+    \item elle tourne facilement.
+\end{itemize}
+
+Si la masse est placée loin du centre :
+
+\begin{itemize}
+    \item il devient plus difficile de modifier sa rotation.
+\end{itemize}
+
+Pourtant, la masse totale peut être identique.
+
+\section{Définition}
+
+Pour un ensemble de masses discrètes :
+
+\begin{equation}
+I = \sum m_i r_i^2
+\end{equation}
+
+où :
+
+\begin{itemize}
+    \item $I$ représente le moment d'inertie ;
+    \item $m_i$ représente une masse ;
+    \item $r_i$ représente sa distance à l'axe de rotation.
+\end{itemize}
+
+Cette équation montre qu'une masse éloignée de l'axe contribue fortement au
+moment d'inertie.
+
+\section{Unités}
+
+Dans le Système international, le moment d'inertie s'exprime en :
+
+\begin{equation}
+kg \cdot m^2
+\end{equation}
+
+Cette unité traduit la combinaison :
+
+\begin{itemize}
+    \item d'une masse ;
+    \item d'une distance au carré.
+\end{itemize}
+
+\section{Axes de rotation}
+
+Un projectile peut tourner autour de plusieurs axes.
+
+On distingue notamment :
+
+\begin{itemize}
+    \item l'axe longitudinal ;
+    \item les axes transverses.
+\end{itemize}
+
+Les moments d'inertie associés sont généralement différents.
+
+\section{Moment d'inertie longitudinal}
+
+Le moment d'inertie longitudinal correspond à une rotation autour de l'axe du
+projectile.
+
+C'est celui qui intervient dans la rotation imposée par les rayures.
+
+Il influence notamment :
+
+\begin{itemize}
+    \item la vitesse de rotation ;
+    \item la stabilité gyroscopique ;
+    \item la conservation du spin.
+\end{itemize}
+
+\section{Moment d'inertie transverse}
+
+Le moment d'inertie transverse correspond à une rotation autour d'un axe
+perpendiculaire à l'axe du projectile.
+
+Il intervient notamment lors :
+
+\begin{itemize}
+    \item de la précession ;
+    \item de la nutation ;
+    \item des changements d'orientation.
+\end{itemize}
+
+\section{Influence de la géométrie}
+
+La forme du projectile influence fortement les moments d'inertie.
+
+Par exemple :
+
+\begin{itemize}
+    \item un projectile long possède généralement un moment d'inertie
+          transverse élevé ;
+    \item un projectile court possède généralement un moment d'inertie
+          transverse plus faible.
+\end{itemize}
+
+\section{Influence de la répartition des masses}
+
+La répartition interne est également importante.
+
+Deux projectiles de même géométrie extérieure peuvent présenter :
+
+\begin{itemize}
+    \item des moments d'inertie différents ;
+    \item des comportements dynamiques différents.
+\end{itemize}
+
+\section{Moments principaux d'inertie}
+
+Pour un projectile présentant une symétrie de révolution, on distingue
+souvent :
+
+\begin{itemize}
+    \item un moment longitudinal ;
+    \item deux moments transverses identiques.
+\end{itemize}
+
+Cette simplification est largement utilisée en balistique.
+
+\section{Lien avec les moments aérodynamiques}
+
+Les forces aérodynamiques génèrent des moments autour du centre de gravité.
+
+La réaction du projectile dépend alors :
+
+\begin{itemize}
+    \item de l'intensité de ces moments ;
+    \item des moments d'inertie du projectile.
+\end{itemize}
+
+Un même effort aérodynamique peut produire des effets très différents selon
+le projectile considéré.
+
+\section{Importance pour la stabilité}
+
+Les moments d'inertie interviennent directement dans les équations de
+stabilité.
+
+Ils influencent notamment :
+
+\begin{itemize}
+    \item la précession ;
+    \item la nutation ;
+    \item les oscillations du projectile.
+\end{itemize}
+
+Ils constituent donc un paramètre fondamental des études balistiques
+avancées.
+
+\section{Moments d'inertie et gyroscope}
+
+Un projectile en rotation se comporte partiellement comme un gyroscope.
+
+Sa réaction aux perturbations dépend :
+
+\begin{itemize}
+    \item de sa vitesse de rotation ;
+    \item de ses moments d'inertie.
+\end{itemize}
+
+Cette propriété sera étudiée dans les prochains chapitres.
+
+\section{Mesure et calcul}
+
+Les moments d'inertie peuvent être :
+
+\begin{itemize}
+    \item calculés à partir de la géométrie ;
+    \item obtenus par modélisation numérique ;
+    \item mesurés expérimentalement.
+\end{itemize}
+
+Les modèles modernes utilisent fréquemment des outils de CAO pour les
+déterminer.
+
+\section{Moments d'inertie et simulation}
+
+Les modèles de masse ponctuelle ignorent les moments d'inertie.
+
+Les modèles avancés les utilisent explicitement.
+
+Ils deviennent indispensables dans les modèles :
+
+\begin{itemize}
+    \item 5DOF ;
+    \item 6DOF ;
+    \item dynamiques complets.
+\end{itemize}
+
+\begin{simulation}
+
+La connaissance des moments d'inertie est nécessaire pour reproduire les
+phénomènes de précession et de nutation dans une simulation.
+
+\end{simulation}
+
+\section{Vers la stabilité statique}
+
+Nous disposons maintenant des éléments suivants :
+
+\begin{itemize}
+    \item géométrie ;
+    \item masse ;
+    \item centre de gravité ;
+    \item centre de pression ;
+    \item moments d'inertie.
+\end{itemize}
+
+Nous pouvons désormais répondre à une question essentielle :
+
+\begin{quote}
+Pourquoi un projectile revient-il naturellement vers sa position d'équilibre
+ou, au contraire, devient-il instable ?
+\end{quote}
+
+Cette question conduit à la notion de stabilité statique.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item Le moment d'inertie est l'équivalent rotationnel de la masse.
+    \item Il dépend de la répartition des masses.
+    \item Un projectile possède plusieurs moments d'inertie.
+    \item Ces grandeurs influencent la stabilité et les oscillations.
+    \item Elles sont indispensables aux modèles balistiques avancés.
+\end{itemize}
+
+\end{aretenir}

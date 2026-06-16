@@ -1,0 +1,281 @@
+%==============================================================================
+% Chapitre 31 - Rotation et stabilisation gyroscopique
+%==============================================================================
+
+\section{Introduction}
+
+Les projectiles modernes d'armes à feu possèdent généralement une forme
+allongée.
+
+Cette géométrie offre d'excellentes performances aérodynamiques mais ne
+garantit pas à elle seule une stabilité suffisante.
+
+Pour maintenir une orientation correcte pendant le vol, les projectiles sont
+mis en rotation rapide autour de leur axe longitudinal.
+
+Cette technique est appelée stabilisation gyroscopique.
+
+\begin{aretenir}
+
+La rotation d'un projectile constitue le principal mécanisme de stabilité des
+balles modernes.
+
+\end{aretenir}
+
+\section{Origine de la rotation}
+
+La rotation est produite par les rayures du canon.
+
+Ces rayures imposent au projectile un mouvement hélicoïdal lors de son
+déplacement dans le tube.
+
+À la sortie du canon, le projectile possède :
+
+\begin{itemize}
+    \item une vitesse de translation ;
+    \item une vitesse de rotation.
+\end{itemize}
+
+Ces deux mouvements coexistent pendant le vol.
+
+\section{Le pas de rayure}
+
+Le pas de rayure correspond à la distance nécessaire pour effectuer un tour
+complet.
+
+Par exemple :
+
+\begin{itemize}
+    \item 1 tour en 10 pouces ;
+    \item 1 tour en 12 pouces ;
+    \item 1 tour en 7 pouces.
+\end{itemize}
+
+Un pas plus court produit généralement une vitesse de rotation plus élevée.
+
+\section{Calcul simplifié de la vitesse de rotation}
+
+La vitesse de rotation dépend :
+
+\begin{itemize}
+    \item de la vitesse initiale ;
+    \item du pas de rayure.
+\end{itemize}
+
+Pour une première approximation :
+
+\begin{equation}
+N=\frac{V}{P}
+\end{equation}
+
+où :
+
+\begin{itemize}
+    \item $N$ représente le nombre de tours par seconde ;
+    \item $V$ représente la vitesse du projectile ;
+    \item $P$ représente le pas de rayure.
+\end{itemize}
+
+\section{Ordres de grandeur}
+
+Les vitesses de rotation obtenues sont considérables.
+
+Un projectile moderne peut atteindre :
+
+\begin{itemize}
+    \item 100\,000 rpm ;
+    \item 200\,000 rpm ;
+    \item 300\,000 rpm ;
+\end{itemize}
+
+voire davantage.
+
+Ces valeurs dépassent largement celles rencontrées dans la plupart des
+systèmes mécaniques usuels.
+
+\section{Le gyroscope}
+
+Un gyroscope est un corps en rotation rapide.
+
+Il possède une propriété remarquable :
+
+\begin{quote}
+Il résiste aux changements de son orientation.
+\end{quote}
+
+Cette propriété résulte de la conservation du moment cinétique.
+
+\section{Exemple de la toupie}
+
+Une toupie immobile tombe rapidement.
+
+Une toupie en rotation reste verticale beaucoup plus longtemps.
+
+La rotation modifie profondément son comportement dynamique.
+
+Le projectile exploite le même principe physique.
+
+\section{Moment cinétique}
+
+Un projectile en rotation possède un moment cinétique.
+
+Cette grandeur dépend notamment :
+
+\begin{itemize}
+    \item du moment d'inertie ;
+    \item de la vitesse de rotation.
+\end{itemize}
+
+Plus le moment cinétique est important, plus il devient difficile de modifier
+l'orientation du projectile.
+
+\section{Action des forces aérodynamiques}
+
+Pendant le vol, l'écoulement d'air exerce des forces sur le projectile.
+
+Ces forces tendent à modifier son orientation.
+
+Sans rotation, certaines configurations deviendraient rapidement instables.
+
+La rotation limite fortement cette tendance.
+
+\section{Stabilisation gyroscopique}
+
+La stabilisation gyroscopique résulte de la combinaison :
+
+\begin{itemize}
+    \item de la rotation ;
+    \item du moment cinétique ;
+    \item des forces aérodynamiques.
+\end{itemize}
+
+Le projectile conserve ainsi une orientation proche de celle imposée lors de
+sa sortie du canon.
+
+\section{Pourquoi la balle ne pointe-t-elle pas exactement sa trajectoire ?}
+
+Un projectile réel ne reste jamais parfaitement aligné avec sa trajectoire.
+
+De faibles écarts apparaissent continuellement.
+
+La stabilisation gyroscopique limite ces écarts mais ne les supprime pas
+complètement.
+
+Ces phénomènes conduisent notamment à :
+
+\begin{itemize}
+    \item la précession ;
+    \item la nutation.
+\end{itemize}
+
+\section{Sous-stabilisation}
+
+Si la rotation est insuffisante :
+
+\begin{itemize}
+    \item le projectile devient instable ;
+    \item l'incidence augmente ;
+    \item la précision se dégrade.
+\end{itemize}
+
+Dans les cas extrêmes, le projectile peut basculer complètement.
+
+On parle alors parfois de culbute.
+
+\section{Surstabilisation}
+
+Une rotation excessive n'est pas toujours idéale.
+
+Elle peut entraîner :
+
+\begin{itemize}
+    \item une augmentation de certaines contraintes mécaniques ;
+    \item certains comportements aérodynamiques indésirables ;
+    \item une sensibilité accrue à certains défauts.
+\end{itemize}
+
+Cependant, les effets d'une légère surstabilisation sont souvent moins
+critiques que ceux d'une sous-stabilisation.
+
+\section{Facteurs influençant la stabilité}
+
+La stabilité gyroscopique dépend notamment :
+
+\begin{itemize}
+    \item du calibre ;
+    \item de la longueur du projectile ;
+    \item de sa masse ;
+    \item du pas de rayure ;
+    \item de la vitesse initiale ;
+    \item des conditions atmosphériques.
+\end{itemize}
+
+Ces paramètres sont fortement liés entre eux.
+
+\section{Facteur de stabilité}
+
+Les ingénieurs utilisent souvent un facteur de stabilité gyroscopique.
+
+Ce coefficient permet d'évaluer si la rotation est suffisante.
+
+Plusieurs méthodes de calcul existent.
+
+Nous les étudierons dans un chapitre ultérieur consacré aux critères de
+stabilité.
+
+\section{Rotation et traînée}
+
+La rotation influence relativement peu la traînée principale du projectile.
+
+Son rôle principal consiste à assurer la stabilité.
+
+Les gains aérodynamiques proviennent surtout de la géométrie.
+
+\section{Rotation et simulation}
+
+Les modèles de masse ponctuelle ignorent généralement la rotation.
+
+Les modèles avancés la prennent explicitement en compte.
+
+Elle devient indispensable pour reproduire :
+
+\begin{itemize}
+    \item la précession ;
+    \item la nutation ;
+    \item le spin drift ;
+    \item certains effets gyroscopiques.
+\end{itemize}
+
+\begin{simulation}
+
+Dans les modèles 6DOF, la rotation du projectile constitue une variable
+d'état fondamentale.
+
+\end{simulation}
+
+\section{Vers la précession}
+
+La stabilisation gyroscopique explique pourquoi le projectile ne se renverse
+pas.
+
+Cependant, un projectile en rotation ne réagit pas aux forces comme un objet
+ordinaire.
+
+Sa réponse présente des comportements parfois surprenants.
+
+Le premier d'entre eux est la précession.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item Les rayures du canon imposent une rotation au projectile.
+    \item Cette rotation crée un effet gyroscopique stabilisateur.
+    \item Le moment cinétique tend à conserver l'orientation du projectile.
+    \item Une rotation insuffisante entraîne une instabilité.
+    \item La stabilisation gyroscopique constitue le principal mécanisme de
+          stabilité des balles modernes.
+\end{itemize}
+
+\end{aretenir}

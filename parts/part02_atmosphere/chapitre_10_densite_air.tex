@@ -1,0 +1,248 @@
+%==============================================================================
+% Chapitre 10 - Densité de l'air
+%==============================================================================
+
+\section{Introduction}
+
+La densité de l'air est l'un des paramètres les plus importants en
+balistique extérieure.
+
+Elle influence directement :
+
+\begin{itemize}
+\item la traînée ;
+\item la conservation de la vitesse ;
+\item le temps de vol ;
+\item la portée ;
+\item la dérive due au vent.
+\end{itemize}
+
+La densité de l'air dépend principalement :
+
+\begin{itemize}
+\item de la pression ;
+\item de la température ;
+\item de l'humidité.
+\end{itemize}
+
+De nombreux calculateurs balistiques utilisent directement cette grandeur.
+
+\begin{aretenir}
+
+La densité de l'air constitue l'un des paramètres atmosphériques les plus
+importants pour le calcul des trajectoires.
+
+\end{aretenir}
+
+\section{Qu'est-ce que la densité ?}
+
+La densité volumique, ou masse volumique, représente la quantité de matière
+contenue dans un volume donné.
+
+Elle est généralement notée :
+
+\begin{center}$\rho$\end{center}
+
+et s'exprime en :
+
+\begin{center}$\mathrm{kg/m^3}$\end{center}
+
+Plus la densité est élevée, plus la quantité d'air rencontrée par le
+projectile est importante.
+
+\section{Densité de référence}
+
+Dans l'atmosphère standard ISA, au niveau moyen de la mer :
+
+\begin{equation}
+\rho_0 = 1,225~\mathrm{kg/m^3}
+\end{equation}
+
+Cette valeur constitue une référence fréquemment utilisée dans les calculs
+balistiques.
+
+\section{Influence de la température}
+
+Lorsque la température augmente :
+
+\begin{itemize}
+\item l'air se dilate ;
+\item son volume augmente ;
+\item sa densité diminue.
+\end{itemize}
+
+À pression identique :
+
+\begin{itemize}
+\item l'air chaud est moins dense ;
+\item l'air froid est plus dense.
+\end{itemize}
+
+\begin{exemple}
+
+Un tir réalisé à 35°C rencontrera généralement moins de résistance
+aérodynamique qu'un tir réalisé à 0°C.
+
+\end{exemple}
+
+\section{Influence de la pression}
+
+Lorsque la pression augmente :
+
+\begin{itemize}
+\item davantage de molécules occupent le même volume ;
+\item la densité augmente.
+\end{itemize}
+
+À température constante :
+
+\begin{itemize}
+\item une pression élevée augmente la densité ;
+\item une pression faible réduit la densité.
+\end{itemize}
+
+Cette relation explique en partie les différences observées entre les tirs
+réalisés à basse et haute altitude.
+
+\section{Influence de l'humidité}
+
+Comme vu au chapitre précédent, la vapeur d'eau possède une masse molaire
+inférieure à celle de l'air sec.
+
+Lorsque l'humidité augmente :
+
+\begin{itemize}
+\item une partie de l'air sec est remplacée ;
+\item la densité diminue légèrement.
+\end{itemize}
+
+L'effet reste généralement plus faible que celui de la température ou de la
+pression.
+
+\section{Loi des gaz parfaits}
+
+Les gaz atmosphériques peuvent être approximés par le modèle des gaz
+parfaits.
+
+\begin{rigueur}
+
+La relation fondamentale est :
+
+\begin{equation}
+P = \rho R T
+\label{eq:gaz_parfait}
+\end{equation}
+
+où :
+
+\begin{itemize}
+\item $P$ est la pression ;
+\item $\rho$ est la densité ;
+\item $R$ est la constante spécifique du gaz ;
+\item $T$ est la température absolue.
+\end{itemize}
+
+\end{rigueur}
+
+Cette relation montre que pression, température et densité sont
+directement liées.
+
+\section{Pourquoi la densité est-elle si importante ?}
+
+Pour un projectile, la densité représente directement la quantité d'air à
+traverser.
+
+Une augmentation de la densité entraîne généralement :
+
+\begin{itemize}
+\item une augmentation de la traînée ;
+\item une diminution de la vitesse résiduelle ;
+\item une augmentation du temps de vol ;
+\item une augmentation de la chute.
+\end{itemize}
+
+À l'inverse, une diminution de la densité réduit ces effets.
+
+\section{Altitude-densité}
+
+La notion d'altitude-densité est très utilisée en aéronautique et en
+balistique.
+
+Elle permet de résumer en une seule grandeur l'effet combiné :
+
+\begin{itemize}
+\item de l'altitude ;
+\item de la température ;
+\item de la pression.
+\end{itemize}
+
+Deux sites situés à la même altitude géométrique peuvent présenter des
+altitudes-densité très différentes.
+
+Pour le projectile, c'est souvent cette grandeur qui est la plus
+représentative des conditions de vol.
+
+\begin{exemple}
+
+Une journée chaude en montagne peut produire une densité de l'air
+comparable à celle rencontrée à une altitude beaucoup plus élevée.
+
+\end{exemple}
+
+\section{Influence sur les essais}
+
+La densité de l'air est rarement mesurée directement.
+
+Elle est généralement calculée à partir :
+
+\begin{itemize}
+\item de la température ;
+\item de la pression ;
+\item de l'humidité.
+\end{itemize}
+
+Cette valeur peut ensuite être utilisée pour :
+
+\begin{itemize}
+\item corriger les résultats ;
+\item alimenter un calculateur balistique ;
+\item comparer plusieurs campagnes d'essais.
+\end{itemize}
+
+\begin{simulation}
+
+La plupart des moteurs balistiques utilisent la densité de l'air pour
+calculer les forces aérodynamiques.
+
+Une variation de quelques pourcents de la densité peut entraîner des
+écarts mesurables à longue distance.
+
+\end{simulation}
+
+\section{Vers la traînée aérodynamique}
+
+La densité de l'air n'agit pas directement sur le projectile.
+
+Elle agit par l'intermédiaire des forces aérodynamiques.
+
+La plus importante de ces forces est la traînée.
+
+Le chapitre consacré à la traînée montrera comment la densité intervient
+dans le calcul des efforts aérodynamiques.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+\item La densité représente la masse d'air contenue dans un volume
+donné.
+\item Elle dépend principalement de la température, de la pression et
+de l'humidité.
+\item Une densité élevée augmente la traînée.
+\item Une densité faible favorise la conservation de la vitesse.
+\item La densité est un paramètre central des modèles balistiques.
+\end{itemize}
+
+\end{aretenir}
+

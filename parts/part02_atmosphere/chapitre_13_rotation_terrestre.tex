@@ -1,0 +1,300 @@
+%==============================================================================
+% Chapitre 13 - Rotation terrestre et effets géophysiques
+%==============================================================================
+
+\section{Introduction}
+
+Dans la plupart des situations courantes, la Terre peut être considérée comme
+immobile.
+
+Cette approximation est suffisante pour de nombreuses applications
+balistiques.
+
+Cependant, lorsque les distances augmentent et que la précision recherchée
+devient importante, plusieurs phénomènes liés à la rotation terrestre
+apparaissent.
+
+Parmi les plus connus figurent :
+
+\begin{itemize}
+    \item l'effet Coriolis ;
+    \item l'effet Eötvös ;
+    \item la courbure terrestre ;
+    \item les variations locales de la gravité.
+\end{itemize}
+
+Ces phénomènes sont généralement négligeables à courte distance mais peuvent
+devenir mesurables lors des tirs à longue portée.
+
+\begin{aretenir}
+
+La rotation terrestre influence la trajectoire des projectiles.
+
+Son effet est généralement faible à courte distance mais devient mesurable à
+longue portée.
+
+\end{aretenir}
+
+\section{La Terre est en rotation}
+
+La Terre effectue une rotation complète sur elle-même en environ :
+
+\begin{equation}
+23~h~56~min~4~s
+\end{equation}
+
+Cette durée correspond au jour sidéral.
+
+La vitesse de rotation dépend de la latitude.
+
+Elle est maximale à l'équateur et nulle aux pôles.
+
+\begin{exemple}
+
+À l'équateur, un point situé à la surface terrestre se déplace à environ :
+
+\begin{equation}
+465~\mathrm{m/s}
+\end{equation}
+
+vers l'est.
+
+\end{exemple}
+
+\section{Référentiel terrestre et référentiel inertiel}
+
+Comme indiqué au chapitre~\ref{chap:referentiels}, la Terre n'est pas un
+référentiel parfaitement inertiel.
+
+Sa rotation introduit des accélérations qui peuvent produire des effets
+apparents sur les trajectoires.
+
+Pour les calculs balistiques de haute précision, ces effets doivent parfois
+être pris en compte.
+
+\section{Principe général}
+
+Lorsqu'un projectile quitte le canon, il conserve la vitesse qu'il possède au
+moment du tir.
+
+Pendant son vol, la Terre continue de tourner sous sa trajectoire.
+
+Cette situation conduit à l'apparition de plusieurs phénomènes observables
+dans le référentiel terrestre.
+
+\begin{exemple}
+
+Un projectile tiré vers le nord depuis l'hémisphère nord conserve initialement
+la vitesse de rotation correspondant à sa latitude de départ.
+
+Or les régions situées plus au nord possèdent une vitesse tangentielle
+légèrement plus faible.
+
+Cette différence contribue à la déviation observée.
+
+\end{exemple}
+
+\section{Effet Coriolis}
+
+L'effet Coriolis est une conséquence directe de la rotation terrestre.
+
+Dans l'hémisphère nord, il tend à dévier les trajectoires :
+
+\begin{itemize}
+    \item vers la droite du mouvement ;
+\end{itemize}
+
+alors que dans l'hémisphère sud il tend à les dévier :
+
+\begin{itemize}
+    \item vers la gauche du mouvement.
+\end{itemize}
+
+\begin{aretenir}
+
+Dans l'hémisphère nord, l'effet Coriolis produit généralement une déviation
+vers la droite.
+
+\end{aretenir}
+
+\section{Compréhension intuitive}
+
+Une façon simple de comprendre l'effet Coriolis consiste à considérer les
+différences de vitesse tangentielle entre les latitudes.
+
+Les points situés près de l'équateur se déplacent plus rapidement vers l'est
+que ceux situés près des pôles.
+
+Un projectile tiré vers le nord conserve initialement la vitesse tangentielle
+de son point de départ.
+
+Il se retrouve alors légèrement décalé vers l'est par rapport au terrain
+survolé.
+
+Cette explication est utile mais ne décrit pas tous les cas possibles.
+
+L'approche complète repose sur la mécanique dans un référentiel en rotation.
+
+\section{Expression mathématique}
+
+\begin{rigueur}
+
+L'accélération de Coriolis s'écrit :
+
+\begin{equation}
+\vec a_C =
+-2\,\vec\Omega \times \vec v
+\label{eq:coriolis}
+\end{equation}
+
+où :
+
+\begin{itemize}
+    \item $\vec a_C$ est l'accélération de Coriolis ;
+    \item $\vec\Omega$ est le vecteur vitesse angulaire terrestre ;
+    \item $\vec v$ est la vitesse du projectile.
+\end{itemize}
+
+\end{rigueur}
+
+Cette formulation sera réutilisée dans les chapitres consacrés aux modèles
+balistiques avancés.
+
+\section{Effet Eötvös}
+
+L'effet Eötvös est moins connu que l'effet Coriolis.
+
+Il apparaît lorsqu'un projectile possède une composante de vitesse vers
+l'est ou vers l'ouest.
+
+Lors d'un tir vers l'est :
+
+\begin{itemize}
+    \item la vitesse de rotation apparente augmente ;
+    \item le poids apparent diminue légèrement.
+\end{itemize}
+
+Lors d'un tir vers l'ouest :
+
+\begin{itemize}
+    \item la vitesse de rotation apparente diminue ;
+    \item le poids apparent augmente légèrement.
+\end{itemize}
+
+\begin{exemple}
+
+Deux projectiles identiques tirés à la même vitesse :
+
+\begin{itemize}
+    \item l'un vers l'est ;
+    \item l'autre vers l'ouest ;
+\end{itemize}
+
+ne suivront pas exactement la même trajectoire.
+
+\end{exemple}
+
+\section{Courbure terrestre}
+
+À courte distance, la surface terrestre peut être considérée comme plane.
+
+Cette approximation devient progressivement moins valide lorsque la distance
+augmente.
+
+La ligne de visée, la trajectoire du projectile et la surface terrestre ne
+partagent alors plus la même géométrie.
+
+La courbure terrestre intervient notamment :
+
+\begin{itemize}
+    \item dans les tirs à très longue distance ;
+    \item dans l'artillerie ;
+    \item dans les simulations de grande échelle.
+\end{itemize}
+
+\section{Variations de la gravité}
+
+La valeur usuelle :
+
+\begin{equation}
+g \approx 9,81~\mathrm{m/s^2}
+\end{equation}
+
+n'est qu'une moyenne.
+
+La gravité varie légèrement :
+
+\begin{itemize}
+    \item avec la latitude ;
+    \item avec l'altitude ;
+    \item avec la forme de la Terre.
+\end{itemize}
+
+Pour les armes légères, ces variations sont généralement négligeables.
+
+\section{Importance relative des effets}
+
+Tous les phénomènes étudiés dans ce chapitre n'ont pas la même importance.
+
+Pour les armes légères, l'ordre d'importance est souvent :
+
+\begin{enumerate}
+    \item gravité ;
+    \item traînée ;
+    \item vent ;
+    \item stabilité gyroscopique ;
+    \item effet Coriolis ;
+    \item effet Eötvös ;
+    \item variations locales de la gravité.
+\end{enumerate}
+
+Cette hiérarchie dépend naturellement :
+
+\begin{itemize}
+    \item de la distance ;
+    \item de la précision recherchée ;
+    \item du type de projectile.
+\end{itemize}
+
+\section{Application aux simulations}
+
+Les modèles balistiques simplifiés ignorent généralement les effets liés à la
+rotation terrestre.
+
+Les modèles avancés peuvent intégrer :
+
+\begin{itemize}
+    \item l'effet Coriolis ;
+    \item l'effet Eötvös ;
+    \item la courbure terrestre ;
+    \item des modèles gravitationnels plus complets.
+\end{itemize}
+
+Ces effets deviennent particulièrement intéressants dans les simulations de
+tirs à longue portée.
+
+\begin{simulation}
+
+Pour une simulation d'armes légères à quelques centaines de mètres, les effets
+liés à la rotation terrestre sont souvent négligeables devant ceux du vent.
+
+À plusieurs kilomètres, ils peuvent devenir mesurables et doivent parfois être
+pris en compte.
+
+\end{simulation}
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item La Terre n'est pas un référentiel parfaitement inertiel.
+    \item La rotation terrestre engendre plusieurs effets mesurables.
+    \item L'effet Coriolis provoque une déviation latérale des trajectoires.
+    \item L'effet Eötvös modifie légèrement le poids apparent.
+    \item La courbure terrestre devient importante aux grandes distances.
+    \item Ces effets sont généralement secondaires par rapport au vent pour
+    les armes légères.
+\end{itemize}
+
+\end{aretenir}

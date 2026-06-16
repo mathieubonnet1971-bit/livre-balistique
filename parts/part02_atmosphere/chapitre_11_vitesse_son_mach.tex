@@ -1,0 +1,273 @@
+%==============================================================================
+% Chapitre 11 - Vitesse du son et nombre de Mach
+%==============================================================================
+
+\section{Introduction}
+
+La vitesse du son joue un rôle fondamental en balistique.
+
+De nombreux phénomènes aérodynamiques dépendent non seulement de la vitesse
+du projectile, mais également de sa vitesse par rapport au son.
+
+Cette comparaison est réalisée à l'aide du nombre de Mach.
+
+La compréhension de ces notions est essentielle pour étudier :
+
+\begin{itemize}
+\item les projectiles supersoniques ;
+\item les projectiles subsoniques ;
+\item les ondes de choc ;
+\item la traînée aérodynamique ;
+\item les performances à longue distance.
+\end{itemize}
+
+\begin{aretenir}
+
+Ce n'est pas la vitesse absolue du projectile qui importe, mais sa vitesse
+par rapport à la vitesse du son dans l'air qui l'entoure.
+
+\end{aretenir}
+
+\section{Qu'est-ce que le son ?}
+
+Le son est une onde mécanique.
+
+Il se propage grâce aux vibrations des molécules du milieu traversé.
+
+Contrairement à la lumière, le son ne peut pas se propager dans le vide.
+
+Sa vitesse dépend des propriétés du milieu et notamment :
+
+\begin{itemize}
+\item de sa composition ;
+\item de sa température ;
+\item de sa pression ;
+\item de sa densité.
+\end{itemize}
+
+\section{Vitesse du son dans l'air}
+
+Dans l'air sec au niveau de la mer, la vitesse du son est d'environ :
+
+\begin{equation}
+c \approx 343~\mathrm{m/s}
+\end{equation}
+
+pour une température de 20°C.
+
+Cette valeur varie avec la température.
+
+\begin{rigueur}
+
+Une approximation couramment utilisée est :
+
+\begin{equation}
+c \approx 331 + 0,6,T
+\label{eq:vitesse_son}
+\end{equation}
+
+où :
+
+\begin{itemize}
+\item $c$ est la vitesse du son en m/s ;
+\item $T$ est la température en °C.
+\end{itemize}
+
+\end{rigueur}
+
+\section{Définition du nombre de Mach}
+
+Le nombre de Mach est défini comme le rapport entre la vitesse d'un objet et
+la vitesse du son.
+
+\begin{equation}
+M = \frac{v}{c}
+\label{eq:mach}
+\end{equation}
+
+où :
+
+\begin{itemize}
+\item $M$ est le nombre de Mach ;
+\item $v$ est la vitesse de l'objet ;
+\item $c$ est la vitesse du son.
+\end{itemize}
+
+Le nombre de Mach est sans dimension.
+
+\section{Interprétation du nombre de Mach}
+
+Le nombre de Mach indique combien de fois un objet se déplace plus vite que
+le son.
+
+\begin{exemple}
+
+Pour un projectile se déplaçant à :
+
+\begin{equation}
+v = 850~\mathrm{m/s}
+\end{equation}
+
+dans un air où :
+
+\begin{equation}
+c = 343~\mathrm{m/s}
+\end{equation}
+
+on obtient :
+
+\begin{equation}
+M \approx 2,48
+\end{equation}
+
+Le projectile vole donc à environ Mach 2,5.
+
+\end{exemple}
+
+\section{Régime subsonique}
+
+Un objet est dit subsonique lorsque :
+
+\begin{equation}
+M < 1
+\end{equation}
+
+Sa vitesse est alors inférieure à celle du son.
+
+Les perturbations aérodynamiques se propagent devant lui.
+
+Les écoulements sont généralement relativement stables.
+
+\section{Régime supersonique}
+
+Un objet est dit supersonique lorsque :
+
+\begin{equation}
+M > 1
+\end{equation}
+
+Il se déplace alors plus rapidement que les perturbations qu'il génère.
+
+Des ondes de choc apparaissent.
+
+La plupart des munitions militaires modernes quittent le canon dans ce
+régime.
+
+\begin{exemple}
+
+Une munition de 7,62~mm OTAN tirée à 850~m/s est initialement supersonique.
+
+\end{exemple}
+
+\section{Régime transsonique}
+
+Le régime transsonique correspond à la zone située autour de Mach 1.
+
+Dans ce manuel, nous considérerons généralement :
+
+\begin{itemize}
+\item subsonique : $M < 0,8$ ;
+\item transsonique : $0,8 \leq M \leq 1,2$ ;
+\item supersonique : $M > 1,2$.
+\end{itemize}
+
+Ces limites sont indicatives et peuvent varier selon les auteurs.
+
+\begin{aretenir}
+
+La zone transsonique est souvent la plus complexe à modéliser.
+
+\end{aretenir}
+
+\section{Pourquoi la zone transsonique est-elle importante ?}
+
+Lorsqu'un projectile ralentit et approche de Mach 1 :
+
+\begin{itemize}
+\item les écoulements changent ;
+\item les ondes de choc évoluent ;
+\item les coefficients aérodynamiques peuvent varier rapidement ;
+\item la stabilité peut être affectée.
+\end{itemize}
+
+Cette zone constitue souvent l'une des principales difficultés des modèles
+balistiques.
+
+\section{Ondes de choc}
+
+Lorsqu'un projectile est supersonique, il génère des ondes de choc.
+
+Ces ondes forment une surface conique appelée cône de Mach.
+
+Le « bang » caractéristique associé au passage d'une balle supersonique est
+directement lié à ces ondes de choc.
+
+\begin{exemple}
+
+Le bruit perçu lors du passage d'un projectile peut être entendu avant le
+bruit de départ du tir.
+
+Cette situation peut sembler paradoxale mais résulte simplement de la
+propagation différente du projectile et du son.
+
+\end{exemple}
+
+\section{Influence sur la traînée}
+
+Le coefficient de traînée d'un projectile varie fortement selon son nombre
+de Mach.
+
+Les zones les plus sensibles sont généralement :
+
+\begin{itemize}
+\item l'approche de Mach 1 ;
+\item la zone transsonique ;
+\item certaines vitesses supersoniques.
+\end{itemize}
+
+Cette dépendance explique pourquoi les modèles balistiques modernes utilisent
+souvent des tables aérodynamiques complexes.
+
+\section{Application aux essais}
+
+Lors d'une campagne d'essais, il peut être utile de connaître :
+
+\begin{itemize}
+\item la vitesse initiale ;
+\item la vitesse résiduelle ;
+\item le nombre de Mach correspondant.
+\end{itemize}
+
+Ces informations permettent notamment d'identifier le régime de vol du
+projectile.
+
+\begin{simulation}
+
+Les modèles balistiques avancés utilisent fréquemment le nombre de Mach pour
+déterminer :
+
+\begin{itemize}
+\item le coefficient de traînée ;
+\item certains coefficients aérodynamiques ;
+\item les changements de régime de vol.
+\end{itemize}
+
+Le nombre de Mach est souvent l'une des variables principales des modèles
+modernes.
+
+\end{simulation}
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+\item Le nombre de Mach compare la vitesse d'un objet à la vitesse du son.
+\item Un projectile peut être subsonique, transsonique ou supersonique.
+\item La vitesse du son dépend notamment de la température.
+\item Les ondes de choc apparaissent en régime supersonique.
+\item La zone transsonique est particulièrement importante en balistique.
+\end{itemize}
+
+\end{aretenir}
+

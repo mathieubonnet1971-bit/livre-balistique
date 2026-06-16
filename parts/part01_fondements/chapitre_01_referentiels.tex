@@ -1,0 +1,212 @@
+%==============================================================================
+% Chapitre 1 - Référentiels
+%==============================================================================
+
+\section{Pourquoi les référentiels sont importants}
+
+Lorsqu'un observateur décrit un mouvement, il le fait toujours par rapport à
+quelque chose.
+
+Ce « quelque chose » est appelé un \textbf{référentiel}.
+
+Sans référentiel, il est impossible de définir correctement :
+
+\begin{itemize}
+    \item une position ;
+    \item une vitesse ;
+    \item une accélération ;
+    \item une trajectoire.
+\end{itemize}
+
+Par exemple, une personne assise dans un train peut affirmer être immobile.
+Pourtant, une personne observant ce même train depuis le quai indiquera que
+cette personne se déplace à plusieurs dizaines de kilomètres par heure.
+
+Les deux observations sont correctes.
+
+Elles sont simplement effectuées dans des référentiels différents.
+
+En balistique, le choix du référentiel est fondamental car il conditionne la
+façon dont les mouvements sont observés et calculés.
+
+\section{Intuition}
+
+Une erreur fréquente consiste à considérer qu'un objet possède une vitesse
+absolue.
+
+En réalité, toute vitesse est relative à un référentiel.
+
+Un passager assis dans un train roulant à 100~km/h possède :
+
+\begin{itemize}
+    \item une vitesse nulle par rapport au train ;
+    \item une vitesse de 100~km/h par rapport au sol.
+\end{itemize}
+
+Il n'existe aucune contradiction.
+
+Les deux mesures décrivent le même phénomène depuis deux points de vue
+différents.
+
+\section{Exemple : tir entre deux véhicules}
+
+Considérons deux véhicules :
+
+\begin{itemize}
+    \item roulant à 10~km/h ;
+    \item dans la même direction ;
+    \item à vitesse constante ;
+    \item séparés latéralement de 50~m.
+\end{itemize}
+
+Un tireur situé sur le premier véhicule vise un point fixe du second véhicule.
+
+Intuitivement, on pourrait penser qu'il faut viser en avant de la cible puisque
+celle-ci se déplace.
+
+Pourtant, ce n'est pas le cas.
+
+Au moment du tir :
+
+\begin{itemize}
+    \item le projectile hérite de la vitesse du véhicule tireur ;
+    \item le véhicule cible possède la même vitesse.
+\end{itemize}
+
+Dans le référentiel des véhicules :
+
+\begin{itemize}
+    \item le tireur est immobile ;
+    \item la cible est immobile ;
+    \item la distance reste constante.
+\end{itemize}
+
+Le problème devient identique à un tir entre deux objets fixes.
+
+Aucune correction de visée n'est nécessaire.
+
+Cet exemple illustre l'importance du choix du référentiel.
+
+\section{Exemple : une balle lancée dans un train}
+
+Une expérience classique consiste à lancer une balle verticalement dans un
+train roulant à vitesse constante.
+
+Pour un observateur situé dans le train :
+
+\begin{itemize}
+    \item la balle monte ;
+    \item la balle redescend ;
+    \item elle retombe dans la main du lanceur.
+\end{itemize}
+
+Pour un observateur situé à l'extérieur :
+
+\begin{itemize}
+    \item la balle avance avec le train ;
+    \item elle décrit une trajectoire courbe.
+\end{itemize}
+
+Les deux observations sont correctes.
+
+La différence provient uniquement du référentiel utilisé.
+
+\section{Référentiel terrestre}
+
+Pour la plupart des applications balistiques, le référentiel utilisé est celui
+lié à la surface de la Terre.
+
+Les positions sont exprimées par rapport au sol.
+
+Les vitesses sont exprimées par rapport au terrain.
+
+Les cibles sont généralement considérées fixes dans ce référentiel.
+
+Pour les tirs de courte et moyenne portée, cette approximation est largement
+suffisante.
+
+\section{Limites du référentiel terrestre}
+
+La Terre tourne sur elle-même.
+
+Par conséquent, le référentiel terrestre n'est pas rigoureusement inertiel.
+
+Cette rotation engendre plusieurs phénomènes :
+
+\begin{itemize}
+    \item l'effet Coriolis ;
+    \item l'effet Eötvös ;
+    \item la courbure terrestre ;
+    \item les variations du champ gravitationnel.
+\end{itemize}
+
+Pour les tirs courants, ces effets sont faibles.
+
+Pour les tirs à longue distance ou pour l'artillerie, ils deviennent
+mesurables.
+
+\section{Référentiel galiléen}
+
+Un référentiel galiléen est un référentiel dans lequel les lois de Newton
+s'appliquent directement.
+
+Dans un tel référentiel :
+
+\begin{itemize}
+    \item un objet sans force appliquée conserve sa vitesse ;
+    \item une accélération est nécessaire pour modifier son mouvement.
+\end{itemize}
+
+En pratique, aucun référentiel réel n'est parfaitement galiléen.
+
+Cependant, pour de nombreuses applications, certains référentiels peuvent être
+considérés comme suffisamment proches d'un référentiel galiléen.
+
+\section{Référentiel tournant}
+
+Lorsqu'un référentiel est en rotation, des forces dites \emph{apparentes}
+apparaissent.
+
+Ces forces ne résultent pas d'une interaction physique directe.
+
+Elles proviennent du choix du référentiel.
+
+Les principales sont :
+
+\begin{itemize}
+    \item la force centrifuge ;
+    \item la force de Coriolis.
+\end{itemize}
+
+Ces forces sont indispensables pour décrire correctement les mouvements
+observés depuis la surface de la Terre.
+
+\section{Application à la balistique}
+
+Les référentiels interviennent dans :
+
+\begin{itemize}
+    \item le calcul des trajectoires ;
+    \item la modélisation des cibles mobiles ;
+    \item les tirs embarqués ;
+    \item les tirs depuis des aéronefs ;
+    \item les tirs longue distance ;
+    \item les simulateurs.
+\end{itemize}
+
+La compréhension des référentiels constitue donc l'une des bases de toute
+étude balistique.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item Toute vitesse est relative à un référentiel.
+    \item Un même mouvement peut être observé différemment selon le référentiel choisi.
+    \item Le référentiel terrestre est généralement utilisé en balistique.
+    \item La rotation de la Terre introduit des effets supplémentaires.
+    \item Les référentiels sont indispensables pour comprendre les trajectoires, les cibles mobiles et les phénomènes tels que l'effet Coriolis.
+\end{itemize}
+
+\end{aretenir}

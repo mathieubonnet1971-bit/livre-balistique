@@ -1,0 +1,269 @@
+%==============================================================================
+% Chapitre 15 - Architecture générale d'une arme à feu
+%==============================================================================
+
+\section{Introduction}
+
+Malgré la grande diversité des armes à feu, la plupart reposent sur une
+architecture générale relativement similaire.
+
+Chaque composant remplit une ou plusieurs fonctions précises participant au
+cycle de tir.
+
+Comprendre cette architecture permet d'identifier l'origine de nombreux
+phénomènes observés lors de l'utilisation ou de la simulation d'une arme.
+
+\begin{aretenir}
+
+Une arme à feu est un système composé de plusieurs sous-ensembles
+interdépendants. Chacun contribue au fonctionnement global et aux
+performances balistiques.
+
+\end{aretenir}
+
+\section{Approche fonctionnelle}
+
+Plutôt que de considérer immédiatement les détails mécaniques, il est utile
+d'adopter une approche fonctionnelle.
+
+Une arme doit assurer plusieurs fonctions essentielles :
+
+\begin{enumerate}
+    \item stocker ou recevoir une munition ;
+    \item introduire la munition dans la chambre ;
+    \item verrouiller le système ;
+    \item initier le tir ;
+    \item guider le projectile ;
+    \item gérer les gaz de combustion ;
+    \item permettre le réarmement ;
+    \item permettre le pointage et la visée.
+\end{enumerate}
+
+Ces fonctions se retrouvent sous une forme ou une autre dans la plupart des
+armes modernes.
+
+\section{Vue d'ensemble des principaux composants}
+
+Les principaux éléments d'une arme à feu sont généralement :
+
+\begin{itemize}
+    \item le canon ;
+    \item la chambre ;
+    \item la culasse ;
+    \item le système de verrouillage ;
+    \item le mécanisme de percussion ;
+    \item le mécanisme de détente ;
+    \item le système d'alimentation ;
+    \item les organes de visée ;
+    \item la structure porteuse.
+\end{itemize}
+
+La conception exacte dépend du type d'arme considéré.
+
+\section{Le canon}
+
+Le canon guide le projectile pendant sa phase d'accélération.
+
+Ses principales fonctions sont :
+
+\begin{itemize}
+    \item contenir les gaz sous pression ;
+    \item guider le projectile ;
+    \item éventuellement lui communiquer une rotation.
+\end{itemize}
+
+Le canon influence fortement :
+
+\begin{itemize}
+    \item la vitesse initiale ;
+    \item la précision ;
+    \item la stabilité du projectile.
+\end{itemize}
+
+Le chapitre suivant lui sera entièrement consacré.
+
+\section{La chambre}
+
+La chambre reçoit la cartouche avant le tir.
+
+Elle constitue l'interface entre la munition et le canon.
+
+Ses dimensions doivent être compatibles avec la munition utilisée.
+
+Une chambre incorrectement dimensionnée peut entraîner :
+
+\begin{itemize}
+    \item des incidents de tir ;
+    \item une usure prématurée ;
+    \item une perte de précision ;
+    \item des risques de sécurité.
+\end{itemize}
+
+\section{La culasse}
+
+La culasse assure généralement plusieurs fonctions :
+
+\begin{itemize}
+    \item fermeture de la chambre ;
+    \item support de la cartouche ;
+    \item percussion ;
+    \item extraction ;
+    \item éjection.
+\end{itemize}
+
+Selon les armes, elle peut être :
+
+\begin{itemize}
+    \item fixe ;
+    \item mobile ;
+    \item verrouillée ;
+    \item non verrouillée.
+\end{itemize}
+
+\section{Le mécanisme de percussion}
+
+Le mécanisme de percussion permet d'initier le tir.
+
+Son rôle est de transmettre suffisamment d'énergie à l'amorce afin de
+déclencher la combustion de la charge propulsive.
+
+Selon les systèmes, cette fonction peut être assurée par :
+
+\begin{itemize}
+    \item un percuteur ;
+    \item un marteau ;
+    \item un système électromécanique ;
+    \item d'autres dispositifs spécialisés.
+\end{itemize}
+
+\section{Le mécanisme de détente}
+
+Le mécanisme de détente constitue l'interface principale entre le tireur et
+l'arme.
+
+Il contrôle le départ du coup.
+
+Ses caractéristiques influencent notamment :
+
+\begin{itemize}
+    \item le confort d'utilisation ;
+    \item la précision ;
+    \item la sécurité.
+\end{itemize}
+
+\section{Le système d'alimentation}
+
+Le système d'alimentation assure l'approvisionnement de l'arme en munitions.
+
+Les solutions les plus courantes sont :
+
+\begin{itemize}
+    \item les chargeurs ;
+    \item les bandes ;
+    \item les magasins tubulaires ;
+    \item les tambours.
+\end{itemize}
+
+Le choix du système dépend de l'emploi recherché.
+
+\section{Les organes de visée}
+
+Les organes de visée permettent d'aligner l'arme avec la cible.
+
+Ils peuvent être :
+
+\begin{itemize}
+    \item mécaniques ;
+    \item optiques ;
+    \item électroniques.
+\end{itemize}
+
+Leur qualité influence directement les performances du tireur.
+
+\section{La structure porteuse}
+
+La structure porteuse regroupe l'ensemble des éléments assurant la rigidité
+et l'ergonomie de l'arme.
+
+Elle comprend notamment :
+
+\begin{itemize}
+    \item la carcasse ;
+    \item le boîtier ;
+    \item la crosse ;
+    \item les interfaces de montage.
+\end{itemize}
+
+Elle doit résister aux efforts générés lors du tir.
+
+\section{Le cycle de tir}
+
+Le fonctionnement complet d'une arme peut être représenté par la séquence
+suivante :
+
+\begin{enumerate}
+    \item alimentation ;
+    \item chambrage ;
+    \item verrouillage ;
+    \item percussion ;
+    \item combustion ;
+    \item accélération du projectile ;
+    \item extraction ;
+    \item éjection ;
+    \item réarmement.
+\end{enumerate}
+
+Cette séquence sera étudiée plus en détail dans la partie consacrée à la
+balistique intérieure.
+
+\begin{simulation}
+
+Dans les simulations simplifiées, une arme est souvent représentée par un
+ensemble réduit de paramètres :
+
+\begin{itemize}
+    \item calibre ;
+    \item vitesse initiale ;
+    \item cadence de tir ;
+    \item dispersion.
+\end{itemize}
+
+Les simulations avancées modélisent davantage de sous-systèmes afin de
+reproduire fidèlement le comportement réel.
+
+\end{simulation}
+
+\section{Architecture et performances}
+
+Les performances d'une arme résultent de l'interaction de tous ses
+composants.
+
+Il est rarement possible d'améliorer un paramètre sans affecter les autres.
+
+Les concepteurs doivent donc rechercher un compromis entre :
+
+\begin{itemize}
+    \item précision ;
+    \item masse ;
+    \item fiabilité ;
+    \item coût ;
+    \item ergonomie ;
+    \item cadence de tir.
+\end{itemize}
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item Une arme à feu est constituée de plusieurs sous-systèmes
+    spécialisés.
+    \item Chaque composant participe au cycle de tir.
+    \item Le canon, la chambre et la culasse jouent un rôle central.
+    \item Les performances résultent de l'interaction de l'ensemble des
+    composants.
+    \item Le cycle de tir constitue la base du fonctionnement des armes
+    modernes.
+\end{itemize}
+
+\end{aretenir}

@@ -1,0 +1,268 @@
+%==============================================================================
+% Chapitre 33 - Nutation
+%==============================================================================
+
+\section{Introduction}
+
+Dans le chapitre précédent, nous avons étudié la précession.
+
+Nous avons vu qu'un projectile en rotation ne conserve pas exactement une
+orientation fixe mais que son axe effectue un mouvement lent autour de la
+direction moyenne du vol.
+
+Cependant, un projectile réel présente généralement un second mouvement
+oscillatoire.
+
+Ce mouvement est appelé nutation.
+
+\begin{aretenir}
+
+La nutation est une oscillation superposée au mouvement de précession.
+
+\end{aretenir}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+
+\draw[dashed] (0,-2) -- (0,2);
+
+\draw[thick] (0,0) -- (2,1.5);
+
+\draw[dashed] (0,0) circle (1);
+
+\draw[->] (1,0) arc (0:60:1);
+
+\node at (2.5,1.7) {Axe du projectile};
+
+\end{tikzpicture}
+\caption{Principe de la nutation.}
+\label{fig:nutation}
+\end{figure}
+
+\section{Origine du terme}
+
+Le mot nutation provient du latin \emph{nutare}, signifiant « osciller » ou
+« hocher la tête ».
+
+Le terme est utilisé dans plusieurs domaines :
+
+\begin{itemize}
+    \item mécanique ;
+    \item astronomie ;
+    \item dynamique des gyroscopes ;
+    \item balistique.
+\end{itemize}
+
+Dans tous les cas, il désigne une oscillation secondaire venant se superposer
+à un mouvement principal.
+
+\section{Précession et nutation}
+
+La précession et la nutation sont souvent observées simultanément.
+
+La précession constitue généralement :
+
+\begin{itemize}
+    \item un mouvement lent ;
+    \item relativement régulier.
+\end{itemize}
+
+La nutation correspond plutôt :
+
+\begin{itemize}
+    \item à une oscillation plus rapide ;
+    \item à une amplitude plus faible.
+\end{itemize}
+
+\section{Exemple de la toupie}
+
+Une toupie constitue à nouveau un excellent exemple.
+
+Lorsqu'elle tourne :
+
+\begin{itemize}
+    \item son axe précessionne ;
+    \item de petites oscillations apparaissent également.
+\end{itemize}
+
+Ces oscillations correspondent à la nutation.
+
+\section{Apparition lors du tir}
+
+La nutation apparaît principalement parce que le projectile ne quitte jamais
+le canon dans un état parfaitement idéal.
+
+À la sortie de bouche, plusieurs perturbations peuvent exister :
+
+\begin{itemize}
+    \item vibrations du canon ;
+    \item dissymétries aérodynamiques ;
+    \item perturbations des gaz ;
+    \item défauts géométriques.
+\end{itemize}
+
+Ces perturbations initiales alimentent les oscillations.
+
+\section{Mouvement de l'axe}
+
+L'axe du projectile n'est pas parfaitement immobile.
+
+Il oscille autour de sa position moyenne.
+
+Cette oscillation se superpose au mouvement de précession.
+
+La trajectoire réelle de l'axe devient alors plus complexe.
+
+\section{Angle de nutation}
+
+La nutation est souvent décrite à l'aide d'un angle.
+
+Cet angle caractérise l'écart entre :
+
+\begin{itemize}
+    \item l'orientation instantanée ;
+    \item l'orientation moyenne.
+\end{itemize}
+
+Dans la plupart des cas, cet angle reste faible.
+
+\section{Amortissement aérodynamique}
+
+L'air tend généralement à amortir la nutation.
+
+Au cours du vol :
+
+\begin{itemize}
+    \item l'amplitude diminue ;
+    \item le mouvement devient plus régulier ;
+    \item le projectile se stabilise progressivement.
+\end{itemize}
+
+Ce phénomène est parfois appelé amortissement dynamique.
+
+\section{Distance de mise en sommeil}
+
+Après la sortie du canon, le projectile traverse souvent une phase de
+stabilisation.
+
+Pendant cette période :
+
+\begin{itemize}
+    \item la précession est importante ;
+    \item la nutation est importante ;
+    \item les oscillations s'atténuent progressivement.
+\end{itemize}
+
+On parle parfois de mise en sommeil (\emph{going to sleep}).
+
+\begin{aretenir}
+
+Un projectile ne vole généralement pas dans son état le plus stable dès la
+sortie du canon.
+
+\end{aretenir}
+
+\section{Influence sur la traînée}
+
+Une nutation importante augmente généralement :
+
+\begin{itemize}
+    \item l'incidence moyenne ;
+    \item la traînée ;
+    \item la dispersion.
+\end{itemize}
+
+Une réduction rapide de la nutation est donc souhaitable.
+
+\section{Influence sur la précision}
+
+La nutation participe aux écarts observés sur les trajectoires réelles.
+
+Son influence dépend notamment :
+
+\begin{itemize}
+    \item de la stabilité gyroscopique ;
+    \item de la qualité du projectile ;
+    \item des perturbations initiales.
+\end{itemize}
+
+\section{Projectile bien stabilisé}
+
+Un projectile correctement stabilisé présente généralement :
+
+\begin{itemize}
+    \item une faible nutation ;
+    \item un amortissement rapide ;
+    \item une bonne précision.
+\end{itemize}
+
+\section{Projectile mal stabilisé}
+
+Si la stabilité est insuffisante :
+
+\begin{itemize}
+    \item la nutation peut persister ;
+    \item l'amplitude peut augmenter ;
+    \item la précision se dégrade fortement.
+\end{itemize}
+
+Dans les cas extrêmes, le projectile peut devenir instable.
+
+\section{Observation expérimentale}
+
+La nutation est difficile à observer directement à l'œil nu.
+
+Son étude repose souvent sur :
+
+\begin{itemize}
+    \item la photographie ultra-rapide ;
+    \item les radars Doppler ;
+    \item les mesures instrumentées ;
+    \item la simulation numérique.
+\end{itemize}
+
+\section{Nutation et simulation}
+
+Les modèles simples ignorent généralement la nutation.
+
+Les modèles avancés peuvent la reproduire.
+
+Elle apparaît naturellement dans les modèles :
+
+\begin{itemize}
+    \item 5DOF ;
+    \item 6DOF.
+\end{itemize}
+
+\begin{simulation}
+
+La reproduction correcte de la nutation constitue souvent un indicateur de
+qualité pour les modèles balistiques avancés.
+
+\end{simulation}
+
+\section{Vers la dérive gyroscopique}
+
+La rotation, la précession et la nutation constituent les principaux
+mouvements dynamiques du projectile.
+
+Ils contribuent également à l'apparition d'un phénomène très connu :
+
+la dérive gyroscopique ou \emph{spin drift}.
+
+Ce phénomène sera étudié dans le chapitre suivant.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item La nutation est une oscillation superposée à la précession.
+    \item Elle apparaît dès la sortie du canon.
+    \item L'atmosphère tend à amortir progressivement ce mouvement.
+    \item Une nutation excessive dégrade la précision.
+    \item Les modèles avancés permettent de la reproduire.
+\end{itemize}
+
+\end{aretenir}

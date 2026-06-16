@@ -1,0 +1,229 @@
+%==============================================================================
+% Chapitre 3 - Dynamique
+%==============================================================================
+
+\section{Introduction}
+
+La dynamique est la branche de la mécanique qui étudie les causes du mouvement.
+
+Alors que la cinématique décrit comment un objet se déplace, la dynamique
+cherche à expliquer pourquoi ce mouvement évolue.
+
+La dynamique constitue l'une des bases de la physique moderne et joue un rôle
+essentiel dans l'étude de la balistique.
+
+\begin{aretenir}
+
+La cinématique décrit les mouvements.
+
+La dynamique explique leurs causes.
+
+\end{aretenir}
+
+\section{La notion de force}
+
+Dans le langage courant, une force est souvent associée à une poussée ou à une
+traction.
+
+En physique, une force représente toute interaction capable de modifier le
+mouvement d'un objet.
+
+Une force peut :
+
+\begin{itemize}
+\item mettre un objet en mouvement ;
+\item ralentir un objet ;
+\item modifier sa direction ;
+\item le déformer.
+\end{itemize}
+
+Une force possède :
+
+\begin{itemize}
+\item une intensité ;
+\item une direction ;
+\item un sens ;
+\item un point d'application.
+\end{itemize}
+
+\section{Exemple intuitif}
+
+Considérons un ballon posé sur le sol.
+
+Tant qu'aucune force significative ne s'exerce sur lui, il reste immobile.
+
+Si une personne lui donne un coup de pied, une force est appliquée.
+
+Le ballon accélère alors dans la direction de cette force.
+
+Cet exemple simple illustre le lien entre force et variation du mouvement.
+
+\section{Première loi de Newton}
+
+La première loi de Newton est parfois appelée principe d'inertie.
+
+Elle indique qu'un objet conserve son état de repos ou de mouvement rectiligne
+uniforme tant qu'aucune force résultante ne s'exerce sur lui.
+
+Cette loi peut sembler évidente, mais elle est en réalité contraire à notre
+intuition quotidienne.
+
+Dans la vie courante, les frottements masquent souvent ce comportement.
+
+\begin{exemple}
+
+Une balle glissant sur une surface parfaitement sans frottement continuerait
+son mouvement indéfiniment.
+
+Dans le monde réel, les frottements finissent toujours par la ralentir.
+
+\end{exemple}
+
+\section{L'inertie}
+
+L'inertie représente la résistance d'un objet à toute modification de son
+mouvement.
+
+Plus un objet possède une masse importante, plus son inertie est élevée.
+
+Il sera donc plus difficile :
+
+\begin{itemize}
+\item de le mettre en mouvement ;
+\item de le ralentir ;
+\item de modifier sa direction.
+\end{itemize}
+
+\section{Deuxième loi de Newton}
+
+La deuxième loi de Newton établit un lien entre force, masse et accélération.
+
+Lorsqu'une force est appliquée à un objet, celui-ci subit une accélération.
+
+Plus la force est importante, plus l'accélération est élevée.
+
+Plus la masse est importante, plus l'accélération est faible.
+
+\begin{rigueur}
+
+La relation fondamentale de la dynamique est :
+
+%\begin{formule}
+    \begin{equation}
+        F = m\,a
+        \label{eq:newton2}
+    \end{equation}
+%\end{formule}
+
+où :
+
+\begin{itemize}
+    \item $F$ représente la force ;
+    \item $m$ représente la masse ;
+    \item $a$ représente l'accélération.
+\end{itemize}
+
+\end{rigueur}
+
+\section{Troisième loi de Newton}
+
+La troisième loi est souvent résumée par l'expression :
+
+\begin{quote}
+À toute action correspond une réaction égale et opposée.
+\end{quote}
+
+Lorsqu'un objet exerce une force sur un second objet, celui-ci exerce une force
+de même intensité dans la direction opposée.
+
+\begin{exemple}
+
+Lors du tir :
+
+\begin{itemize}
+\item les gaz poussent le projectile vers l'avant ;
+\item le projectile exerce une réaction vers l'arrière sur l'arme.
+\end{itemize}
+
+Cette réaction participe au recul de l'arme.
+
+\end{exemple}
+
+\section{Forces rencontrées en balistique}
+
+Pendant son vol, un projectile est soumis à plusieurs forces.
+
+Les principales sont :
+
+\begin{itemize}
+\item la gravité ;
+\item la traînée aérodynamique ;
+\item les effets liés au vent ;
+\item certaines forces gyroscopiques ;
+\item les effets liés à la rotation terrestre.
+\end{itemize}
+
+L'importance de ces forces dépend fortement :
+
+\begin{itemize}
+\item de la distance de tir ;
+\item de la vitesse du projectile ;
+\item de l'environnement ;
+\item de la précision recherchée.
+\end{itemize}
+
+\section{Résultante des forces}
+
+Un projectile est généralement soumis à plusieurs forces simultanément.
+
+L'effet réel observé dépend de leur combinaison.
+
+Cette combinaison est appelée résultante des forces.
+
+C'est cette résultante qui détermine l'accélération du projectile et donc
+l'évolution de sa trajectoire.
+
+\section{Application à la balistique}
+
+L'étude balistique consiste principalement à déterminer :
+
+\begin{itemize}
+\item quelles forces s'exercent sur le projectile ;
+\item comment elles évoluent ;
+\item comment elles modifient la trajectoire.
+\end{itemize}
+
+Tous les modèles balistiques reposent finalement sur cette idée fondamentale.
+
+\begin{simulation}
+
+Dans un moteur balistique, les forces sont généralement calculées à intervalles
+réguliers.
+
+À chaque étape du calcul :
+
+\begin{itemize}
+\item les forces sont évaluées ;
+\item l'accélération est déterminée ;
+\item la vitesse est mise à jour ;
+\item la nouvelle position est calculée.
+\end{itemize}
+
+La précision de la simulation dépend directement de la qualité de ces calculs.
+
+\end{simulation}
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+\item Une force modifie le mouvement d'un objet.
+\item La masse caractérise son inertie.
+\item Les lois de Newton constituent la base de la mécanique classique.
+\item La dynamique explique l'évolution des trajectoires.
+\item Toute étude balistique repose sur l'analyse des forces appliquées au projectile.
+\end{itemize}
+
+\end{aretenir}
+

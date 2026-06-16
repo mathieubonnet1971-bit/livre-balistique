@@ -1,0 +1,229 @@
+\section{Introduction}
+
+La cinématique est la branche de la mécanique qui décrit les mouvements sans
+chercher à expliquer leurs causes.
+
+Elle s'intéresse notamment à :
+
+\begin{itemize}
+\item la position ;
+\item la vitesse ;
+\item l'accélération ;
+\item la trajectoire.
+\end{itemize}
+
+Contrairement à la dynamique, la cinématique ne s'intéresse pas aux forces.
+
+Elle cherche uniquement à répondre à la question :
+
+\begin{quote}
+Comment un objet se déplace-t-il ?
+\end{quote}
+
+\section{Pourquoi la cinématique est importante en balistique}
+
+La balistique extérieure consiste principalement à étudier le mouvement d'un
+projectile entre son départ du canon et son impact.
+
+Pour comprendre ce mouvement, il est nécessaire de savoir décrire :
+
+\begin{itemize}
+\item où se trouve le projectile ;
+\item à quelle vitesse il se déplace ;
+\item comment sa vitesse évolue ;
+\item quelle trajectoire il suit.
+\end{itemize}
+
+Ces notions constituent le vocabulaire de base de toute étude balistique.
+
+\begin{aretenir}
+
+La cinématique décrit le mouvement des objets sans chercher à expliquer les
+forces qui produisent ce mouvement.
+
+\end{aretenir}
+
+\section{Position}
+
+La position permet de localiser un objet dans l'espace.
+
+Pour cela, il est nécessaire de définir un repère.
+
+Dans ce manuel, nous utiliserons généralement un repère cartésien composé de
+trois axes :
+
+\begin{itemize}
+\item l'axe X ;
+\item l'axe Y ;
+\item l'axe Z.
+\end{itemize}
+
+La position d'un objet est alors définie par ses coordonnées dans ce repère.
+
+\begin{exemple}
+
+La position d'une cible peut être décrite par :
+
+[
+(X,Y,Z) = (250,;40,;0)
+]
+
+Cela signifie que la cible se situe à 250 mètres selon l'axe X, 40 mètres
+selon l'axe Y et au niveau du sol.
+
+\end{exemple}
+
+\section{Trajectoire}
+
+La trajectoire est l'ensemble des positions successivement occupées par un
+objet au cours du temps.
+
+Selon les conditions de mouvement, une trajectoire peut être :
+
+\begin{itemize}
+\item rectiligne ;
+\item circulaire ;
+\item parabolique ;
+\item curviligne.
+\end{itemize}
+
+En balistique réelle, la trajectoire d'un projectile n'est généralement pas
+une parabole parfaite.
+
+La gravité, la traînée aérodynamique et d'autres phénomènes modifient sa
+forme.
+
+\section{Distance parcourue et déplacement}
+
+Deux notions sont souvent confondues :
+
+\begin{itemize}
+\item la distance parcourue ;
+\item le déplacement.
+\end{itemize}
+
+La distance parcourue correspond à la longueur totale du trajet effectué.
+
+Le déplacement correspond à la différence entre la position initiale et la
+position finale.
+
+\begin{exemple}
+
+Un véhicule effectue une boucle de 10 kilomètres et revient à son point de
+départ.
+
+\begin{itemize}
+\item Distance parcourue : 10 km.
+\item Déplacement : 0 km.
+\end{itemize}
+
+\end{exemple}
+
+\section{Vitesse}
+
+La vitesse décrit l'évolution de la position au cours du temps.
+
+Dans le langage courant, seule sa valeur est généralement mentionnée.
+
+Par exemple :
+
+\begin{itemize}
+\item 10 km/h ;
+\item 50 km/h ;
+\item 850 m/s.
+\end{itemize}
+
+En physique, la vitesse possède également une direction.
+
+Deux objets peuvent donc avoir la même vitesse tout en se déplaçant dans des
+directions différentes.
+
+\section{Exemple : projectile de MAG58}
+
+Une balle quittant le canon d'une MAG58 avec une vitesse initiale de
+850~m/s possède :
+
+\begin{itemize}
+\item une vitesse élevée ;
+\item une direction initiale définie par l'orientation du canon.
+\end{itemize}
+
+Pendant son vol :
+
+\begin{itemize}
+\item sa vitesse diminue sous l'effet de la traînée ;
+\item sa direction évolue sous l'effet de la gravité.
+\end{itemize}
+
+\section{Accélération}
+
+L'accélération mesure l'évolution de la vitesse au cours du temps.
+
+Une accélération peut correspondre :
+
+\begin{itemize}
+\item à une augmentation de la vitesse ;
+\item à une diminution de la vitesse ;
+\item à un changement de direction.
+\end{itemize}
+
+Ainsi, un objet se déplaçant à vitesse constante sur une trajectoire
+circulaire possède une accélération.
+
+La valeur de sa vitesse reste constante mais sa direction change en
+permanence.
+
+\section{Les mouvements fondamentaux}
+
+Les principaux mouvements étudiés en mécanique sont :
+
+\begin{itemize}
+\item le mouvement rectiligne uniforme ;
+\item le mouvement rectiligne uniformément accéléré ;
+\item le mouvement circulaire ;
+\item le mouvement curviligne.
+\end{itemize}
+
+Le mouvement d'un projectile réel appartient généralement à cette dernière
+catégorie.
+
+\section{Application à la balistique}
+
+La cinématique permet de décrire :
+
+\begin{itemize}
+\item la trajectoire d'un projectile ;
+\item le temps de vol ;
+\item la vitesse résiduelle ;
+\item la chute ;
+\item les déplacements d'une cible ;
+\item les mouvements d'une plateforme de tir.
+\end{itemize}
+
+Elle constitue donc la base mathématique nécessaire à l'étude de la
+balistique extérieure.
+
+\begin{simulation}
+
+La plupart des moteurs balistiques calculent à intervalles réguliers la
+position, la vitesse et l'accélération du projectile afin de déterminer sa
+trajectoire future.
+
+La qualité du modèle dépend directement de la précision avec laquelle ces
+grandeurs sont calculées.
+
+\end{simulation}
+
+\begin{aretenir}
+
+\begin{itemize}
+\item La cinématique décrit les mouvements sans étudier leurs causes.
+\item La position permet de localiser un objet dans l'espace.
+\item La trajectoire est l'ensemble des positions successives d'un objet.
+\item La vitesse possède une valeur et une direction.
+\item L'accélération traduit une variation de vitesse ou de direction.
+\item La cinématique constitue l'un des fondements de la balistique.
+\end{itemize}
+
+\end{aretenir}
+

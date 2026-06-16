@@ -1,0 +1,323 @@
+%==============================================================================
+% Chapitre 29 - Outils mécaniques pour la balistique
+%==============================================================================
+
+\section{Introduction}
+
+Les chapitres précédents ont introduit plusieurs notions importantes :
+
+\begin{itemize}
+    \item masse ;
+    \item centre de gravité ;
+    \item centre de pression ;
+    \item moments d'inertie.
+\end{itemize}
+
+Afin de comprendre les phénomènes de stabilité, il est nécessaire
+d'introduire quelques outils mécaniques supplémentaires.
+
+L'objectif de ce chapitre n'est pas de développer un cours complet de
+mécanique, mais de fournir les notions indispensables à la compréhension des
+chapitres suivants.
+
+\begin{aretenir}
+
+Les outils présentés dans ce chapitre seront utilisés pour expliquer la
+stabilité, la précession et la nutation des projectiles.
+
+\end{aretenir}
+
+\section{Grandeurs scalaires et vectorielles}
+
+Certaines grandeurs physiques sont entièrement décrites par une valeur
+numérique.
+
+On les appelle des scalaires.
+
+Exemples :
+
+\begin{itemize}
+    \item masse ;
+    \item température ;
+    \item pression ;
+    \item énergie.
+\end{itemize}
+
+D'autres nécessitent également une direction.
+
+On les appelle des vecteurs.
+
+Exemples :
+
+\begin{itemize}
+    \item vitesse ;
+    \item accélération ;
+    \item force ;
+    \item déplacement.
+\end{itemize}
+
+\section{Notion de vecteur}
+
+Un vecteur possède :
+
+\begin{itemize}
+    \item une norme ;
+    \item une direction ;
+    \item un sens.
+\end{itemize}
+
+Graphiquement, il est souvent représenté par une flèche.
+
+\begin{exemple}
+
+Une vitesse de :
+
+\begin{equation}
+800~m/s
+\end{equation}
+
+vers le nord est différente d'une vitesse de :
+
+\begin{equation}
+800~m/s
+\end{equation}
+
+vers l'est.
+
+\end{exemple}
+
+\section{Addition de vecteurs}
+
+Les vecteurs peuvent être additionnés.
+
+Cette propriété permet notamment d'expliquer :
+
+\begin{itemize}
+    \item les tirs depuis un véhicule ;
+    \item l'effet du vent ;
+    \item certains changements de référentiel.
+\end{itemize}
+
+\begin{exemple}
+
+Un projectile quittant un véhicule en mouvement possède :
+
+\begin{itemize}
+    \item sa vitesse propre ;
+    \item la vitesse du véhicule.
+\end{itemize}
+
+La vitesse observée résulte de l'addition de ces deux vecteurs.
+
+\end{exemple}
+
+\section{La force}
+
+Une force est une action mécanique capable de modifier le mouvement d'un
+corps.
+
+Elle est représentée par un vecteur.
+
+Ses caractéristiques sont :
+
+\begin{itemize}
+    \item intensité ;
+    \item direction ;
+    \item sens ;
+    \item point d'application.
+\end{itemize}
+
+\section{Rappel de la deuxième loi de Newton}
+
+Nous avons déjà rencontré :
+
+\begin{equation}
+F = ma
+\end{equation}
+
+Cette équation signifie que la force produit une accélération.
+
+Plus la masse est importante, plus il faut appliquer une force élevée pour
+obtenir la même accélération.
+
+\section{Le bras de levier}
+
+Considérons une porte.
+
+Il est plus facile de l'ouvrir en poussant sur la poignée qu'au voisinage des
+charnières.
+
+Cette différence s'explique par le bras de levier.
+
+Le bras de levier correspond à la distance entre :
+
+\begin{itemize}
+    \item l'axe de rotation ;
+    \item le point d'application de la force.
+\end{itemize}
+
+\section{Moment d'une force}
+
+Une force appliquée à distance d'un axe produit un moment.
+
+Le moment mesure la capacité de cette force à provoquer une rotation.
+
+Dans le cas simple :
+
+\begin{equation}
+M = F \times d
+\end{equation}
+
+où :
+
+\begin{itemize}
+    \item $M$ représente le moment ;
+    \item $F$ représente la force ;
+    \item $d$ représente le bras de levier.
+\end{itemize}
+
+\begin{aretenir}
+
+Une même force produit un effet plus important lorsqu'elle agit loin de
+l'axe de rotation.
+
+\end{aretenir}
+
+\section{Application aux projectiles}
+
+Lorsqu'une force aérodynamique agit au centre de pression alors que le centre
+de gravité est situé ailleurs, un moment apparaît.
+
+Ce moment tend à faire pivoter le projectile.
+
+C'est l'un des mécanismes fondamentaux de la stabilité.
+
+\section{Rotation}
+
+Un projectile rayé tourne autour de son axe longitudinal.
+
+Cette rotation est caractérisée par une vitesse angulaire.
+
+La vitesse angulaire indique la rapidité de la rotation.
+
+\section{Vitesse angulaire}
+
+La vitesse angulaire est généralement notée :
+
+\begin{equation}
+\omega
+\end{equation}
+
+Elle s'exprime en :
+
+\begin{equation}
+rad/s
+\end{equation}
+
+Plus la vitesse angulaire est élevée, plus le projectile tourne rapidement.
+
+\section{Tour par minute}
+
+Dans certains domaines, on utilise également :
+
+\begin{equation}
+rpm
+\end{equation}
+
+pour \emph{revolutions per minute}.
+
+Les projectiles modernes peuvent atteindre plusieurs centaines de milliers de
+tours par minute.
+
+\begin{exemple}
+
+Un projectile quittant un canon rayé peut dépasser :
+
+\begin{equation}
+200\,000~rpm
+\end{equation}
+
+voire davantage selon le calibre et le pas de rayure.
+
+\end{exemple}
+
+\section{Quantité de mouvement angulaire}
+
+Un corps en rotation possède une quantité de mouvement angulaire.
+
+Cette grandeur joue pour la rotation un rôle analogue à celui de la quantité
+de mouvement en translation.
+
+Plus elle est élevée, plus il est difficile de modifier l'orientation du
+corps.
+
+\section{Effet gyroscopique}
+
+Une toupie en rotation reste droite beaucoup plus facilement qu'une toupie
+immobile.
+
+Ce phénomène est appelé effet gyroscopique.
+
+Le même principe intervient pour les projectiles rayés.
+
+La rotation contribue à leur stabilité.
+
+\section{Perturbations}
+
+Pendant son vol, un projectile subit de nombreuses perturbations :
+
+\begin{itemize}
+    \item vent ;
+    \item turbulences ;
+    \item défauts géométriques ;
+    \item variations aérodynamiques.
+\end{itemize}
+
+La manière dont il réagit dépend notamment :
+
+\begin{itemize}
+    \item de sa rotation ;
+    \item de ses moments d'inertie ;
+    \item des moments aérodynamiques appliqués.
+\end{itemize}
+
+\section{Importance pour la balistique}
+
+Les notions introduites dans ce chapitre permettent de comprendre :
+
+\begin{itemize}
+    \item la stabilité statique ;
+    \item la stabilité gyroscopique ;
+    \item la précession ;
+    \item la nutation ;
+    \item le spin drift.
+\end{itemize}
+
+Elles constituent donc des outils essentiels pour l'étude avancée des
+projectiles.
+
+\section{Vers la stabilité statique}
+
+Nous disposons désormais de tous les éléments nécessaires pour répondre à une
+question fondamentale :
+
+\begin{quote}
+Comment savoir si un projectile tend naturellement à revenir vers sa position
+d'équilibre ou à s'en éloigner ?
+\end{quote}
+
+La réponse conduit à la notion de stabilité statique.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item Une force est une grandeur vectorielle.
+    \item Une force appliquée à distance crée un moment.
+    \item Le bras de levier influence ce moment.
+    \item Un projectile rayé possède une vitesse angulaire élevée.
+    \item La rotation produit un effet gyroscopique stabilisateur.
+\end{itemize}
+
+\end{aretenir}
