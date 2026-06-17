@@ -200,43 +200,52 @@ Le sertissage influence notamment :
     \item le départ de la charge.
 \end{itemize}
 
-\begin{figure}[htbp]
+    \begin{figure}[htbp]
+    \centering
+
+    \begin{tikzpicture}[scale=1]
+
+    % Etoile
+    \draw (0,0) circle (1);
+
+    \foreach \a in {0,60,120,180,240,300}
+    {
+    \draw (0,0) -- (\a:1);
+    }
+
+    \node at (0,-1.8)
+    {Sertissage étoile};
+
+    % Rond
+    \begin{scope}[xshift=5cm]
+
+    \draw (0,0) circle (1);
+
+    \draw (0,0) circle (0.83);
+
+    \node at (0,0)
+    {8};
+
+    \node at (0,-1.8)
+    {Sertissage rond};
+
+    \end{scope}
+
+    \end{tikzpicture}
+
+    \caption{Exemples de sertissages couramment rencontrés.}
+    \label{fig:sertissages}
+
+    \end{figure}
+
+\begin{comment}
+\begin{figure}[!t]
 \centering
-
-\begin{tikzpicture}[scale=1]
-
-% Etoile
-\draw (0,0) circle (1);
-
-\foreach \a in {0,60,120,180,240,300}
-{
-\draw (0,0) -- (\a:1);
-}
-
-\node at (0,-1.8)
-{Sertissage étoile};
-
-% Rond
-\begin{scope}[xshift=5cm]
-
-\draw (0,0) circle (1);
-
-\draw (0,0) circle (0.83);
-
-\node at (0,0)
-{8};
-
-\node at (0,-1.8)
-{Sertissage rond};
-
-\end{scope}
-
-\end{tikzpicture}
-
+\includegraphics[width=300px]{figures/sertissages.jpg}
 \caption{Exemples de sertissages couramment rencontrés.}
-\label{fig:sertissages}
-
+\label{sertissages}
 \end{figure}
+\end{comment} 
 
 \section{Longueur de la cartouche}
 

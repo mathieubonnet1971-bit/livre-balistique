@@ -45,8 +45,8 @@
 - ch 46 : longueur obus = 8m? (155*52)
 
 
-
-
+- ch 55: image au lieu de dessin tikz
+-ch 58 : environnement pour les "quotes" à créer (pour qu'ils soient plus visibles...)
 
 
 
