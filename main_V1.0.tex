@@ -64,6 +64,14 @@
 \date{\today}
 
 
+
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{4em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{2.5em}{4em}}
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4em}}
+\renewcommand*\l@table{\@dottedtocline{1}{1.5em}{4em}}
+\makeatother
+
 \begin{document}
 
 \begin{titlepage}
@@ -323,5 +331,9 @@ Mathieu Bonnet
     \chapter{Les munitions spéciales}
     \label{chap:munitions_speciales}
     \input{parts/part05_munitions/chapitre_52_munitions_speciales}
+
+    \chapter{Les munitions de chasse}
+    \label{chap:munitions_chasse}
+    \input{parts/part05_munitions/chapitre_53_munitions_chasse}
 
 \end{document}
