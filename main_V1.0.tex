@@ -19,7 +19,11 @@
 
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{float}
 \usepackage{longtable}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 \usepackage[hidelinks]{hyperref}
 
@@ -365,5 +369,22 @@ Mathieu Bonnet
     \chapter{Les chargements de grenaille}
     \label{chap:chargements_grenaille}
     \input{parts/part05_munitions/chapitre_60_chargements_grenaille}
+
+    \chapter{Les chevrotines}
+    \label{chap:les_chevrotines}
+    \input{parts/part05_munitions/chapitre_61_les_chevrotines}
+
+\appendix
+
+\part{Annexes}
+
+    \chapter{Influence de l'inclinaison de l'arme (Cant)}
+    \label{chap:rotation_arme}
+    \input{parts/part_14_annexes/annexe_01_rotation_arme}
+
+    \chapter{Évolution de la vitesse avec la distance}
+    \label{chap:evolution_vitesse}
+    \input{parts/part_14_annexes/annexe_02_evolution_de_la_vitesse_avec_la_distance}
+
 
 \end{document}

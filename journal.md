@@ -358,3 +358,11 @@ OLD
 59 Mesure des pressions
 60 Modélisation de la balistique intérieure
 
+59 — Les calibres de chasse
+60 — Les chargements de grenaille
+61 — Les chevrotines
+62 — Les balles pour fusils lisses
+63 — Les matériaux des projectiles de chasse
+64 — Les désignations commerciales
+65 — Synthèse des munitions de chasse
+
