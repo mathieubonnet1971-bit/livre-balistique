@@ -1,0 +1,247 @@
+\documentclass[a4paper,11pt]{book}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage[
+    a4paper,
+    inner=2.3cm,
+    outer=1.8cm,
+    top=2.2cm,
+    bottom=2.2cm
+]{geometry}
+
+\usepackage{microtype}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{longtable}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{csquotes}
+
+\usepackage{verbatim} 
+
+\usepackage{enumitem}
+
+\setlist[itemize]{
+    topsep=2mm,
+    partopsep=0mm,
+    parsep=0mm,
+    itemsep=1mm,
+    leftmargin=20mm,
+    label=\ColoredListItemIII{\CurrentPartColor}
+}
+
+\setlist[enumerate]{
+    topsep=2mm,
+    partopsep=0mm,
+    parsep=0mm,
+    itemsep=1mm
+}
+
+\usepackage[most]{tcolorbox}
+\input{styles/manual_style}
+
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
+\usetikzlibrary{trees}
+
+% Colors
+\definecolor{PartColor}{HTML}{333333}
+\definecolor{Part1Color}{HTML}{1F4E79}
+\definecolor{Part2Color}{HTML}{5B6770}
+\definecolor{Part3Color}{HTML}{4F7942}
+\definecolor{Part4Color}{HTML}{8B2E2E}
+\definecolor{Part5Color}{HTML}{C26A00}
+\definecolor{Part6Color}{HTML}{A00000}
+\definecolor{Part7Color}{HTML}{2E75B6}
+\definecolor{Part8Color}{HTML}{6B4F2A}
+\definecolor{Part9Color}{HTML}{7030A0}
+\definecolor{AnnexColor}{HTML}{888888}
+
+\newcommand{\CurrentPartColor}{PartColor}
+
+\usepackage{fancyhdr}
+
+% Header
+\usetikzlibrary{calc}
+\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[CE]{%
+\begin{tikzpicture}[overlay, remember picture]%
+    \fill[\CurrentPartColor!70] (current page.north west) rectangle ($(current page.north east)+(0,-0.6in)$);
+    \node[anchor=north west, text=white, font=\Large\scshape, minimum size=0.6in, inner xsep=3mm] at (current page.north west) {\textbf{\leftmark}};
+    \node[anchor=north east, text=white, font=\Large\scshape, minimum size=0.6in, inner xsep=3mm] at (current page.north east) {\textbf{\thepage}};
+\end{tikzpicture}
+}
+\fancyhead[CO]{%
+\begin{tikzpicture}[overlay, remember picture]%
+    \fill[\CurrentPartColor!70] (current page.north west) rectangle ($(current page.north east)+(0,-0.6in)$);
+    \node[anchor=north west, text=white, font=\Large\scshape, minimum size=0.6in, inner xsep=3mm] at (current page.north west) {\textbf{\thepage}};
+    \node[anchor=north east, text=white, font=\Large\scshape, minimum size=0.6in, inner xsep=3mm] at (current page.north east) {\textbf{\rightmark}};
+\end{tikzpicture}
+}
+
+% Footer
+\newcommand{\CurrentPartNumber}{Préliminaires}
+\newcommand{\CurrentPartName}{Préliminaires}
+\newcommand{\CurrentChaterType}{Chapitre}
+
+\fancyfoot[C]{
+    \begin{tikzpicture}[overlay, remember picture]%
+    \fill[\CurrentPartColor!40] (current page.south west) rectangle ($(current page.south east)+(0.5,0.4in)$);
+    \node[anchor=south west, text=white, font=\Large\scshape, minimum size=0.4in, inner xsep=3mm] at (current page.south west) {\textbf{Manuel de Balistique --- \CurrentPartNumber\ --- \CurrentChaterType \thechapter}};
+\end{tikzpicture}
+}
+\setlength{\headheight}{12pt}
+
+%\title{A reasonably long title}
+%\date{\today}
+%\author{The author}
+
+
+\usepackage{sectsty}
+\chapterfont{\color{\CurrentPartColor!100}}  % sets colour of chapters
+\sectionfont{\color{\CurrentPartColor!90}}  % sets colour of sections
+\subsectionfont{\color{\CurrentPartColor!80}}  % sets colour of subsections
+\subsubsectionfont{\color{\CurrentPartColor!70}}  % sets colour of subsubsections
+\paragraphfont{\color{\CurrentPartColor!60}}  % sets colour of paragraph
+
+
+\usepackage{tikzpagenodes}
+\usepackage{everypage}
+
+\setcounter{tocdepth}{1}
+
+
+\title{Manuel de Balistique}
+\author{Mathieu Bonnet}
+\date{\today}
+
+\usepackage[x11names,dvipsnames]{xcolor}
+% from https://tex.stackexchange.com/a/167024/121799
+\newcommand{\ColorList}{red,DarkOrange1,Goldenrod1,Green3,blue!50!cyan,DarkOrchid2,Apricot,Blue,Brown,Aquamarine,BlueGreen,BurntOrange,Bittersweet,BlueViolet,CadetBlue,Black,BrickRed,CarnationPink,Cerulean,CornflowerBlue,Cyan,Dandelion,DarkOrchid,Emerald,ForestGreen,Fuchsia,Goldenrod,Gray,Green,GreenYellow,JungleGreen,Lavender,LimeGreen,Magenta,Mahogany,Maroon,Melon,MidnightBlue,Mulberry,NavyBlue,OliveGreen,Orange,OrangeRed,Orchid,Peach,Periwinkle,PineGreen,Plum,ProcessBlue,Purple,RawSienna,Red,RedOrange,RedViolet,Rhodamine,RoyalBlue,RoyalPurple,RubineRed,Salmon,SeaGreen,Sepia,SkyBlue,SpringGreen,Tan,TealBlue,Thistle,Turquoise,Violet,VioletRed,White,WildStrawberry,Yellow,YellowGreen,YellowOrange}
+
+% Enum lists
+\newcommand{\ColoredListItemI}[1]{\foreach \X[count=\Y] in \ColorList
+{\ifnum\Y=#1\relax
+\xdef\ItemColorI{\X}
+\fi
+}
+
+\tikz
+\node[
+circle,
+fill=\CurrentPartColor,
+text=white,
+font=\bfseries,
+inner sep=2pt
+]{1};
+}
+
+% Enum lists nested
+\newcommand{\ColoredListItemII}[1]{
+
+\xdef\ItemColorIII{Gray}
+
+\tikz[baseline=(ColoredListItemII.base),remember picture]{%
+\node[circle,fill=\ItemColorII,inner sep=2.25pt,font=\sffamily,fill opacity=0.5] (ColoredListItemII){#1};}
+}
+
+% Item lists
+\newcommand{\ColoredListItemIII}[1]{
+\tikz[baseline=(n.base)]{
+\node[circle,
+fill={#1},
+inner sep=2pt]
+(n){};
+}
+}
+
+%\renewcommand{\labelenumi}{\ColoredListItemI{\arabic{enumi}}}
+%\renewcommand{\labelenumii}{\ColoredListItemII{.}}
+%\renewcommand{\labelitemi}{\ColoredListItemIII}
+%\renewcommand{\labelitemi}{XXX}
+
+% TOC
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{4em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{2.5em}{4em}}
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4em}}
+\renewcommand*\l@table{\@dottedtocline{1}{1.5em}{4em}}
+\makeatother
+
+% Footer Header everywhere
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+\begin{document}
+\pagestyle{fancy}
+
+\begin{titlepage}
+
+\centering
+
+\vspace*{4cm}
+
+{\Huge\bfseries Manuel de Balistique\par}
+
+\vspace{1cm}
+
+{\Large Principes physiques, armes, projectiles,
+munitions, modélisation et simulation\par}
+
+\vfill
+
+{\Large Version 0.1 -- Document de travail\par}
+
+\vspace{1cm}
+
+Mathieu Bonnet
+
+\vspace{1cm}
+
+\today
+
+\end{titlepage}
+
+\frontmatter
+
+% \maketitle
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\mainmatter
+
+\input{parts/part_01.tex}
+\input{parts/part_02.tex}
+\input{parts/part_03.tex}
+\input{parts/part_04.tex}
+\input{parts/part_05.tex}
+\input{parts/part_06.tex}
+
+\input{parts/part_14.tex}
+
+
+\end{document}
