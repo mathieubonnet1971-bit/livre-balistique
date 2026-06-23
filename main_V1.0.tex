@@ -32,12 +32,6 @@
 
 \usepackage{verbatim} 
 
-\usepackage{sectsty}
-\sectionfont{\color{red!80}}  % sets colour of chapters
-\subsectionfont{\color{BrickRed}}  % sets colour of sections
-\subsubsectionfont{\color{BrickRed!50}}  % sets colour of sections
-\paragraphfont{\color{gray!80}}  % sets colour of sections
-
 \usepackage{enumitem}
 
 \setlist[itemize]{
@@ -46,7 +40,7 @@
     parsep=0mm,
     itemsep=1mm,
     leftmargin=20mm,
-    label=\ColoredListItemIII{ForestGreen}
+    label=\ColoredListItemIII{\CurrentPartColor}
 }
 
 \setlist[enumerate]{
@@ -76,7 +70,7 @@
 \definecolor{Part7Color}{HTML}{2E75B6}
 \definecolor{Part8Color}{HTML}{6B4F2A}
 \definecolor{Part9Color}{HTML}{7030A0}
-\definecolor{AnnexColor}{HTML}{A0A0A0}
+\definecolor{AnnexColor}{HTML}{888888}
 
 \newcommand{\CurrentPartColor}{PartColor}
 
@@ -102,25 +96,26 @@
 
 \fancyhead[RE]{%
 \colorbox{\CurrentPartColor!20}{%
-\parbox[c][12pt][c]{\dimexpr\textwidth-2cm\relax}{%
+\parbox[c][12pt][c]{\dimexpr\textwidth-2.5cm\relax}{%
 \raggedleft\nouppercase{\leftmark}\hspace{5pt}
 }}
 }
 
 \renewcommand{\headrulewidth}{0pt}
 
+% Footer
 \fancyfoot{}
 
+%\renewcommand{\footrulewidth}{0.5pt}
 
-
-\renewcommand{\footrulewidth}{0.5pt}
+\newcommand{\CurrentPartName}{Préliminaires}
 
 \fancyfoot[C]{%
 \colorbox{\CurrentPartColor!10}{%
 \parbox{\textwidth}{%
 \small
 \hspace{5pt}
-Livre de balistique
+Livre de Balistique --- \CurrentPartName
 \hfill
 \thepage
 \hspace{5pt}
@@ -128,6 +123,12 @@ Livre de balistique
 }
 
 
+\usepackage{sectsty}
+\chapterfont{\color{\CurrentPartColor!100}}  % sets colour of chapters
+\sectionfont{\color{\CurrentPartColor!90}}  % sets colour of sections
+\subsectionfont{\color{\CurrentPartColor!80}}  % sets colour of subsections
+\subsubsectionfont{\color{\CurrentPartColor!70}}  % sets colour of subsubsections
+\paragraphfont{\color{\CurrentPartColor!60}}  % sets colour of paragraph
 
 
 \usepackage{tikzpagenodes}
@@ -236,14 +237,14 @@ Mathieu Bonnet
 
 \mainmatter
 
-\input{parts/part_01.tex}
-\input{parts/part_02.tex}
-\input{parts/part_03.tex}
-\input{parts/part_04.tex}
-\input{parts/part_05.tex}
+%\input{parts/part_01.tex}
+%\input{parts/part_02.tex}
+%\input{parts/part_03.tex}
+%\input{parts/part_04.tex}
+%\input{parts/part_05.tex}
 \input{parts/part_06.tex}
 
-\input{parts/part_14.tex}
+%\input{parts/part_14.tex}
 
 
 \end{document}
