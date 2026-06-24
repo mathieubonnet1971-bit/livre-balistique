@@ -30,7 +30,9 @@
 
 \usepackage{csquotes}
 
-\usepackage{verbatim} 
+\usepackage{verbatim}
+
+\usepackage{sectsty}
 
 \usepackage{enumitem}
 
@@ -60,7 +62,7 @@
 \usetikzlibrary{trees}
 
 % Colors
-\definecolor{PartColor}{HTML}{333333}
+\definecolor{PartColor}{HTML}{111111}
 \definecolor{Part1Color}{HTML}{1F4E79}
 \definecolor{Part2Color}{HTML}{5B6770}
 \definecolor{Part3Color}{HTML}{4F7942}
@@ -101,17 +103,16 @@
 \fancyhf{}
 
 
-%\input{header_footer_01.tex}
-\input{header_footer_02.tex}
+\input{header_footer_01.tex}
+%\input{header_footer_02.tex}
 
-
-
-\usepackage{sectsty}
-\chapterfont{\color{\CurrentPartColor!100}}  % sets colour of chapters
-\sectionfont{\color{\CurrentPartColor!90}}  % sets colour of sections
-\subsectionfont{\color{\CurrentPartColor!80}}  % sets colour of subsections
-\subsubsectionfont{\color{\CurrentPartColor!70}}  % sets colour of subsubsections
-\paragraphfont{\color{\CurrentPartColor!60}}  % sets colour of paragraph
+\partfont{\color{PartColor!100}}            % sets colour of parts
+\chapterfont{\color{\CurrentPartColor!100}}         % sets colour of chapters
+\sectionfont{\color{\CurrentPartColor!90}}          % sets colour of sections
+\subsectionfont{\color{\CurrentPartColor!80}}       % sets colour of subsections
+\subsubsectionfont{\color{\CurrentPartColor!70}}    % sets colour of subsubsections
+\paragraphfont{\color{\CurrentPartColor!60}}        % sets colour of paragraph
+\subparagraphfont{\color{\CurrentPartColor!40}}     % sets colour of subparagraph
 
 
 \usepackage{tikzpagenodes}
@@ -225,14 +226,14 @@ Mathieu Bonnet
 
 \mainmatter
 
-%\input{parts/part_01.tex}
-%\input{parts/part_02.tex}
-%\input{parts/part_03.tex}
-%\input{parts/part_04.tex}
-%\input{parts/part_05.tex}
+\input{parts/part_01.tex}
+\input{parts/part_02.tex}
+\input{parts/part_03.tex}
+\input{parts/part_04.tex}
+\input{parts/part_05.tex}
 \input{parts/part_06.tex}
 
-%\input{parts/part_14.tex}
+\input{parts/part_14.tex}
 
 
 \end{document}

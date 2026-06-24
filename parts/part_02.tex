@@ -1,13 +1,19 @@
+% Laisser le dernier chapitre de la précédente partie afin d'éviter des problèmes de décalage de couleur dans les entêtes/pieds de page (décalage entre pages).
+
+    \chapter{Mécanique des fluides appliquée}
+    \label{chap:mecanique_des_fluides}
+    \input{parts/part01_fondements/chapitre_05_mecanique_des_fluides}
+
+\cleardoublepage
 \SetHeaderColor{Part2Color}
 \renewcommand{\CurrentPartColor}{Part2Color}
-\cleardoublepage
 \renewcommand{\CurrentPartNumber}{Partie 02}
 \renewcommand{\CurrentPartName}{Atmosphère et environnement}
 \renewcommand{\CurrentChapterType}{Chapitre}
 
-\part{Atmosphère et environnement}
-
 \markboth{Atmosphère et environnement}{Atmosphère et environnement}
+
+\part{Atmosphère et environnement}
 
     \chapter{Atmosphere Standard}
     \label{chap:atmosphere_standard}
@@ -37,6 +43,3 @@
     \label{chap:vent}
     \input{parts/part02_atmosphere/chapitre_12_vent.tex}
 
-    \chapter{Rotation terrestre}
-    \label{chap:rotation_terrestre}
-    \input{parts/part02_atmosphere/chapitre_13_rotation_terrestre.tex}
