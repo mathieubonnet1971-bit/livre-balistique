@@ -55,7 +55,6 @@
 \usepackage[most]{tcolorbox}
 \input{styles/manual_style}
 
-
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{positioning}
@@ -120,10 +119,13 @@
 
 \setcounter{tocdepth}{1}
 
+\def\mytitle{Manuel de Balistique}
+\def\myauthor{Mathieu Bonnet}
+\def\mydate{\today}
 
-\title{Manuel de Balistique}
-\author{Mathieu Bonnet}
-\date{\today}
+\title{\mytitle}
+\author{\myauthor}
+\date{\mydate}
 
 \usepackage[x11names,dvipsnames]{xcolor}
 % from https://tex.stackexchange.com/a/167024/121799
@@ -227,13 +229,13 @@ Mathieu Bonnet
 \mainmatter
 
 \input{parts/part_01.tex}
-\input{parts/part_02.tex}
-\input{parts/part_03.tex}
-\input{parts/part_04.tex}
-\input{parts/part_05.tex}
+%\input{parts/part_02.tex}
+%\input{parts/part_03.tex}
+%\input{parts/part_04.tex}
+%\input{parts/part_05.tex}
 \input{parts/part_06.tex}
 
-\input{parts/part_14.tex}
+%\input{parts/part_14.tex}
 
 
 \end{document}
