@@ -1,0 +1,44 @@
+% Header
+\def\darkColor{70}
+\def\lightColor{30}
+\newcommand{\SetHeaderColor}[1]{%
+\fancyhead[RE]{%
+\begin{tikzpicture}[overlay, remember picture]%
+    \fill[#1!\darkColor] (current page.north west) rectangle ($(current page.north east)+(0,-0.6in)$);
+    \node[anchor=north west, text=white, font=\large, minimum size=0.6in, inner xsep=3mm] at (current page.north west) {\textbf{\leftmark}};
+    \node[anchor=north east, text=white, font=\Large\scshape, minimum size=0.6in, inner xsep=3mm] at (current page.north east) {\textbf{\thepage}};
+\end{tikzpicture}
+
+\begin{tikzpicture}[shading = axis,rectangle, left color=#1!\darkColor, right color=#1!\darkColor, remember picture,overlay,shift={(current page text area.south east)}]
+\node [shading = axis,rectangle, top color=#1!\darkColor, bottom color=#1!\lightColor!white,anchor=south east, rectangle, minimum width=2mm, minimum height=0.92\paperheight, inner xsep=5mm] at (3cm,-1.3cm) {};
+\end{tikzpicture}
+}
+
+\fancyhead[RO]{%
+\begin{tikzpicture}[overlay, remember picture]%
+    \fill[#1!\darkColor] (current page.north west) rectangle ($(current page.north east)+(0,-0.6in)$);
+    \node[anchor=north west, text=white, font=\Large\scshape, minimum size=0.6in, inner xsep=3mm] at (current page.north west) {\textbf{\thepage}};
+    \node[anchor=north east, text=white, font=\large, minimum size=0.6in, inner xsep=3mm] at (current page.north east) {\textbf{\rightmark}};
+\end{tikzpicture}
+
+\begin{tikzpicture}[shading = axis,rectangle, left color=#1!\darkColor, right color=#1!\darkColor, remember picture,overlay,shift={(current page text area.south west)}]
+\node [shading = axis,rectangle, top color=#1!\darkColor, bottom color=#1!\lightColor!white,anchor=south east, rectangle, minimum width=2mm, minimum height=0.92\paperheight, inner xsep=5mm] at (-1.5cm,-1.3cm) {};
+\end{tikzpicture}
+}
+
+% Footer
+\fancyfoot[C]{
+    \begin{tikzpicture}[overlay, remember picture]%
+    \fill[#1!\lightColor] (current page.south west) rectangle ($(current page.south east)+(0.5,0.4in)$);
+    \node[anchor=south west, text=white, font=\large\scshape, minimum size=0.4in, inner xsep=3mm] at (current page.south west) {\textbf{\mytitle\ --- Partie\ \thepart}};
+    \node[anchor=south east, text=white, font=\large\scshape, minimum size=0.4in, inner xsep=3mm] at (current page.south east) {\textbf{\myauthor\ ---\mydate}};
+    \node[anchor=south east, minimum size=0mm, inner xsep=100mm, inner ysep=0.6mm] at (current page.south east) {{\transparent{0.5}\includegraphics[width=24px]{logos/mbo.png}}};
+\end{tikzpicture}
+}
+\setlength{\headheight}{12pt}
+
+}
+
+
+
+

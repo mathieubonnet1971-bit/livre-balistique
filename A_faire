@@ -1,0 +1,192 @@
+Merci, ça explique pratiquement tout. Et je pense que tu es tombé sur une **limite d'utilisation de `fancyhdr`**, pas sur un bug de ton code.
+
+En regardant `\SetHeaderColor`, il y a deux choses qui me sautent aux yeux.
+
+---
+
+# 1. Tu redéfinis le style `fancy`
+
+À chaque changement de partie, tu exécutes :
+
+```latex
+\SetHeaderColor{Part2Color}
+```
+
+qui fait en réalité :
+
+```latex
+\fancyhead[RE]{...}
+\fancyhead[RO]{...}
+\fancyfoot[C]{...}
+```
+
+Autrement dit, tu modifies **la définition du style `fancy`**.
+
+Or le style `fancy` est **global**.
+
+La dernière page de la partie précédente n'est pas forcément encore sortie lorsque tu modifies cette définition.
+
+C'est exactement ce qui explique que les dernières pages changent de couleur.
+
+---
+
+# 2. `remember picture`
+
+Tu utilises partout :
+
+```latex
+remember picture
+```
+
+Cela signifie que TikZ ne dessine pas immédiatement.
+
+Il mémorise des informations qui seront exploitées lors du `shipout`.
+
+Ce n'est pas faux, mais ça accentue le phénomène précédent.
+
+---
+
+# Ce que je ferais
+
+Je ne redéfinirais **jamais** `fancyhead`.
+
+Je la définirais **une seule fois** dans le préambule.
+
+Ensuite je ne changerais que des variables.
+
+Par exemple :
+
+```latex
+\fancyhead[RO]{%
+    \HeaderBackground
+}
+```
+
+et :
+
+```latex
+\newcommand{\HeaderBackground}{}
+```
+
+Puis :
+
+```latex
+\renewcommand{\HeaderBackground}{%
+    \begin{tikzpicture}...
+}
+```
+
+Tu ne modifies plus le style `fancy`, tu modifies uniquement le contenu d'une macro.
+
+C'est beaucoup plus propre.
+
+---
+
+# Encore mieux
+
+Je pense qu'il faut aller un cran plus loin.
+
+Au lieu de :
+
+```latex
+\fancyhead
+```
+
+je passerais par :
+
+```latex
+\AddToHook{shipout/background}
+```
+
+(depuis LaTeX 2020).
+
+Pourquoi ?
+
+Parce que ce que tu fais n'est pas un "header".
+
+Tu dessines littéralement :
+
+* un bandeau sur toute la largeur ;
+* une barre verticale ;
+* un pied complet.
+
+C'est un décor de page.
+
+Ce décor devrait être dessiné au moment du `shipout`, pas dans `fancyhdr`.
+
+Ensuite `fancyhdr` ne contiendrait plus que :
+
+```latex
+\fancyhead[RO]{\thepage}
+\fancyhead[LE]{\leftmark}
+```
+
+et rien d'autre.
+
+---
+
+# Une autre remarque
+
+Tu fais :
+
+```latex
+\fill[#1!70]
+```
+
+Le `#1` est figé lorsque tu appelles :
+
+```latex
+\SetHeaderColor{Part2Color}
+```
+
+Donc ce n'est plus le problème de `CurrentPartColor`.
+
+Le fait que tu observes encore un décalage confirme presque à 100 % que c'est bien **la redéfinition du style `fancy`** qui arrive avant le `shipout` de la dernière page.
+
+---
+
+# Ce que j'aurais fait dès le départ (avec le recul)
+
+Je crois que j'aurais conçu le système ainsi :
+
+```
+Partie 2
+    ↓
+SetPartStyle
+    ↓
+CurrentPartColor
+CurrentPartName
+CurrentSidebarColor
+    ↓
+Header unique
+Footer unique
+Background unique
+```
+
+Autrement dit :
+
+* **une seule définition** de `fancyhdr` dans tout le document ;
+* **une seule définition** du dessin TikZ ;
+* seules les variables changent.
+
+C'est beaucoup plus proche de l'architecture utilisée par les classes professionnelles (`memoir`, `KOMA-Script`, etc.).
+
+---
+
+## Mon avis
+
+Tu as trouvé un contournement qui fonctionne, donc il n'y a pas d'urgence à tout réécrire.
+
+En revanche, je pense que ton livre a maintenant atteint une taille (plus de 300 pages) où il mérite une petite refactorisation de son infrastructure graphique.
+
+Je serais tenté de créer un véritable **package `stylebook.sty`** qui regrouperait :
+
+* les couleurs des parties ;
+* les entêtes et pieds de page ;
+* les environnements (`simulation`, `aretenir`, etc.) ;
+* les styles TikZ ;
+* les listes colorées ;
+* les commandes `\BookPart`.
+
+On gagnerait énormément en lisibilité et on éliminerait ce genre de comportement subtil lié aux interactions entre `fancyhdr`, TikZ et la pagination. J'ai l'impression que ton document est en train de passer du stade de "gros document LaTeX" à celui de "classe de document personnalisée", et ce serait une évolution naturelle.
+

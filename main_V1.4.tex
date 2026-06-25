@@ -60,6 +60,8 @@
 \usetikzlibrary{positioning}
 \usetikzlibrary{trees}
 
+\usepackage{transparent}
+
 % Colors
 \definecolor{PartColor}{HTML}{111111}
 \definecolor{Part1Color}{HTML}{1F4E79}
@@ -102,16 +104,16 @@
 \fancyhf{}
 
 
-\input{header_footer_01.tex}
+\input{libs/header_footer_01.tex}
 %\input{header_footer_02.tex}
 
-\partfont{\color{PartColor!100}}            % sets colour of parts
-\chapterfont{\color{\CurrentPartColor!100}}         % sets colour of chapters
-\sectionfont{\color{\CurrentPartColor!90}}          % sets colour of sections
-\subsectionfont{\color{\CurrentPartColor!80}}       % sets colour of subsections
-\subsubsectionfont{\color{\CurrentPartColor!70}}    % sets colour of subsubsections
-\paragraphfont{\color{\CurrentPartColor!60}}        % sets colour of paragraph
-\subparagraphfont{\color{\CurrentPartColor!40}}     % sets colour of subparagraph
+\partfont{\color{PartColor!100!black}}            % sets colour of parts
+\chapterfont{\color{\CurrentPartColor!100!black}}         % sets colour of chapters
+\sectionfont{\color{\CurrentPartColor!90!black}}          % sets colour of sections
+\subsectionfont{\color{\CurrentPartColor!80!black}}       % sets colour of subsections
+\subsubsectionfont{\color{\CurrentPartColor!70!black}}    % sets colour of subsubsections
+\paragraphfont{\color{\CurrentPartColor!60!black}}        % sets colour of paragraph
+\subparagraphfont{\color{\CurrentPartColor!40!black}}     % sets colour of subparagraph
 
 
 \usepackage{tikzpagenodes}
