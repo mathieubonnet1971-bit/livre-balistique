@@ -1,0 +1,56 @@
+\newcommand{\Projectile}[2]{%
+    \fill[blue!60]
+        (#1,#2-0.25)
+        rectangle
+        ++(0.8,0.5);
+}
+
+\newcommand{\GasVolume}[4]{%
+    \fill[Part6Color!20]
+        (#1,#2)
+        rectangle
+        (#3,#4);
+}
+
+\newcommand{\Canon}[1]{%
+
+\draw[fill=gray!15]
+    (0,-0.8)
+    rectangle
+    (#1,0.8);
+
+\fill[white]
+    (0,-0.35)
+    rectangle
+    (#1,0.35);
+
+}
+
+
+%\DrawRifling{0}{12}
+%\PressureArrow
+%\PressureArrows
+%\DrawCartridge
+%\DrawCartridge
+%\HighlightPrimer
+%\HighlightPowder
+%\HighlightProjectile
+%\PhenomenonBox
+%\BallisticBox
+%\BallisticTimeline
+%\ForceArrow
+%\BallisticCanon
+%\BallisticProjectile
+%\BallisticCartridge
+%\BallisticPressure
+%\BallisticGas
+%\BallisticPrimer
+%\BallisticPowder
+%\BallisticCase
+%\DrawPressure
+%\DrawVelocity
+%\DrawAcceleration
+%\DrawForce
+%\DrawTrajectory
+%\DrawTimeline
+

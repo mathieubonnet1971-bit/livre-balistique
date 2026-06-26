@@ -53,12 +53,15 @@
 }
 
 \usepackage[most]{tcolorbox}
-\input{styles/manual_style}
+\input{styles/book_style}
 
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{positioning}
 \usetikzlibrary{trees}
+
+%\input{styles/tikz_symbols}
+%\input{styles/tikz_ballistics}
 
 \usepackage{transparent}
 
@@ -74,6 +77,11 @@
 \definecolor{Part8Color}{HTML}{6B4F2A}
 \definecolor{Part9Color}{HTML}{7030A0}
 \definecolor{AnnexColor}{HTML}{888888}
+
+\definecolor{ProjectileColor}{HTML}{00B7EB}
+\definecolor{GasColor}{HTML}{B31B1B}
+\definecolor{PressureColor}{HTML}{CC5500}
+
 
 \newcommand{\CurrentPartColor}{PartColor}
 \newcommand{\CurrentPartNumber}{}
@@ -164,7 +172,7 @@ inner sep=2pt
 \tikz[baseline=(n.base)]{
 \node[circle,
 fill={#1},
-inner sep=2pt]
+inner sep=2.25pt]
 (n){};
 }
 }

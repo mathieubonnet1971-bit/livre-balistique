@@ -10,7 +10,7 @@
 \end{tikzpicture}
 
 \begin{tikzpicture}[shading = axis,rectangle, left color=#1!\darkColor, right color=#1!\darkColor, remember picture,overlay,shift={(current page text area.south east)}]
-\node [shading = axis,rectangle, top color=#1!\darkColor, bottom color=#1!\lightColor!white,anchor=south east, rectangle, minimum width=2mm, minimum height=0.92\paperheight, inner xsep=5mm] at (3cm,-1.3cm) {};
+\node [shading = axis,rectangle, top color=#1!\darkColor, bottom color=#1!\lightColor!white,anchor=south east, rectangle, minimum width=2mm, minimum height=0.92\paperheight, inner xsep=5mm] at (3.01cm,-1.3cm) {};
 \end{tikzpicture}
 }
 
@@ -32,7 +32,7 @@
     \fill[#1!\lightColor] (current page.south west) rectangle ($(current page.south east)+(0.5,0.4in)$);
     \node[anchor=south west, text=white, font=\large\scshape, minimum size=0.4in, inner xsep=3mm] at (current page.south west) {\textbf{\mytitle\ --- Partie\ \thepart}};
     \node[anchor=south east, text=white, font=\large\scshape, minimum size=0.4in, inner xsep=3mm] at (current page.south east) {\textbf{\myauthor\ ---\mydate}};
-    \node[anchor=south east, minimum size=0mm, inner xsep=100mm, inner ysep=0.6mm] at (current page.south east) {{\transparent{0.5}\includegraphics[width=24px]{logos/mbo.png}}};
+    \node[anchor=south east, minimum size=0mm, inner xsep=100mm, inner ysep=0.6mm] at (current page.south east) {{\transparent{0.5}\includegraphics[width=24px]{logos/mbo_light.png}}};
 \end{tikzpicture}
 }
 \setlength{\headheight}{12pt}

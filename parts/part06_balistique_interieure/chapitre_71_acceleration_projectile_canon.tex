@@ -1,0 +1,286 @@
+%==============================================================================
+% Chapitre 71 - L'accélération du projectile dans le canon
+%==============================================================================
+
+\section{Introduction}
+
+Une fois le projectile mis en mouvement, les gaz issus de la combustion
+continuent à exercer une pression sur son culot.
+
+Cette pression lui communique une accélération qui se poursuit pendant la plus
+grande partie de son parcours dans le canon.
+
+\begin{aretenir}
+
+Le projectile accélère tant que la force exercée par les gaz demeure
+supérieure aux forces qui s'opposent à son mouvement.
+
+\end{aretenir}
+
+\section{Origine de l'accélération}
+
+La pression des gaz exerce une force dirigée suivant l'axe du canon.
+
+Cette force est responsable de l'accélération du projectile.
+
+À mesure que le projectile avance, sa vitesse augmente continuellement jusqu'à
+sa sortie de bouche.
+
+\begin{figure}[htbp]
+\centering
+
+\begin{tikzpicture}[>=Latex]
+
+% Projectile
+\fill[ProjectileColor]
+(0,-0.4)
+rectangle
+(3,0.4);
+
+\node at (1.5,0){Projectile};
+
+% Gaz
+\fill[GasColor]
+(-3,-0.4)
+rectangle
+(0,0.4);
+
+\node at (-1.5,0){Gaz};
+
+% Force pression
+\draw[-{Latex[length=4mm]},very thick,PressureColor]
+(-1,0.6)--(0.8,0.6);
+
+\node[above]
+at (-0.1,0.6)
+{$F_{\mathrm{pression}}$};
+
+% Frottement
+\draw[-{Latex[length=4mm]},very thick]
+(4,0)--(3,0);
+
+\node[right]
+at (4,0)
+{$F_{\mathrm{frottement}}$};
+
+\end{tikzpicture}
+
+\caption{Forces principales agissant sur le projectile.}
+\label{fig:forces_projectile}
+
+\end{figure}
+
+\begin{formule}{Force exercée par les gaz}
+
+La force appliquée au culot du projectile est égale au produit de la pression
+par la surface sur laquelle elle s'exerce.
+
+\begin{description}
+\item[$F$] Force exercée sur le projectile (N)
+\item[$P$] Pression des gaz (Pa)
+\item[$S$] Surface du culot ($m^2$)
+\end{description}
+
+\end{formule}
+
+\section{Deuxième loi de Newton}
+
+Le mouvement du projectile est régi par les lois de la mécanique classique.
+
+La force résultante appliquée au projectile détermine directement son
+accélération.
+
+\begin{rigueur}{\textbf{Force et accélération}}
+
+Une même force ne produit pas la même accélération sur tous les projectiles.
+
+À force identique, un projectile plus massif accélère moins qu'un projectile
+plus léger.
+
+Les relations mathématiques correspondantes seront développées dans un chapitre
+ultérieur.
+
+\end{rigueur}
+
+\begin{figure}[htbp]
+\centering
+
+\begin{tikzpicture}[
+block/.style={
+draw,
+rounded corners,
+minimum width=32mm,
+minimum height=8mm
+}
+]
+
+\node[block](P){Pression};
+
+\node[block,right=22mm of P](F){Force};
+
+\node[block,right=22mm of F](A){Accélération};
+
+\draw[-Latex,thick](P)--(F);
+\draw[-Latex,thick](F)--(A);
+
+\end{tikzpicture}
+
+\caption{La pression engendre une force qui provoque l'accélération du projectile.}
+
+\end{figure}
+
+\begin{formule}{Deuxième loi de Newton}
+
+L'accélération est proportionnelle à la force résultante appliquée au
+projectile et inversement proportionnelle à sa masse.
+
+\begin{equation}
+\label{newton2}
+F = ma
+\end{equation}
+
+\begin{description}
+
+\item[$F$] Force résultante (N)
+
+\item[$m$] Masse du projectile (kg)
+
+\item[$a$] Accélération ($m.s^{-2}$)
+
+\end{description}
+
+\end{formule}
+
+\section{Évolution de la vitesse}
+
+La vitesse n'augmente pas de manière parfaitement linéaire.
+
+Elle dépend notamment :
+
+\begin{itemize}
+    \item de la pression des gaz ;
+    \item de la combustion de la poudre ;
+    \item de la masse du projectile ;
+    \item des frottements.
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+
+\begin{tikzpicture}
+
+\draw[-Latex]
+(0,0)--(10,0)
+node[right]{Temps};
+
+\draw[-Latex]
+(0,0)--(0,5)
+node[above]{Vitesse};
+
+\draw[very thick,ProjectileColor]
+plot[smooth]
+coordinates{
+(0.3,0.1)
+(1,0.4)
+(2,1.2)
+(3,2.3)
+(4,3.3)
+(5,4)
+(6,4.4)
+(7,4.7)
+(8,4.9)
+(9,5)
+};
+
+\end{tikzpicture}
+
+\caption{Évolution qualitative de la vitesse du projectile.}
+
+\end{figure}
+
+\section{Influence des frottements}
+
+Le déplacement du projectile s'accompagne de frottements entre celui-ci et
+l'intérieur du canon.
+
+Ces frottements absorbent une partie de l'énergie disponible.
+
+Ils contribuent également à l'échauffement du canon et du projectile.
+
+\section{Influence des rayures}
+
+Dans un canon rayé, une partie de l'énergie est utilisée pour communiquer un
+mouvement de rotation au projectile.
+
+Cette énergie n'est donc plus disponible pour son accélération longitudinale.
+
+Cependant, cette perte reste relativement faible devant l'énergie totale mise
+en jeu.
+
+\section{Évolution de la pression}
+
+Pendant que le projectile accélère, deux phénomènes évoluent simultanément :
+
+\begin{itemize}
+    \item la combustion continue à produire des gaz ;
+    \item le volume situé derrière le projectile augmente.
+\end{itemize}
+
+La pression résulte en permanence de l'équilibre entre ces deux phénomènes.
+
+\section{Accélération maximale}
+
+L'accélération du projectile peut atteindre des valeurs extrêmement élevées.
+
+Elle dépasse largement celles rencontrées dans la plupart des applications
+courantes de la mécanique.
+
+Cette phase ne dure toutefois que quelques millisecondes.
+
+\section{Fin de l'accélération}
+
+Lorsque le projectile approche de la bouche du canon, la pression diminue
+progressivement.
+
+L'accélération décroît alors jusqu'à devenir pratiquement nulle au moment où le
+projectile quitte le canon.
+
+\section{Observation expérimentale}
+
+L'accélération peut être déterminée indirectement à partir de mesures de
+vitesse réalisées le long du canon ou à sa sortie.
+
+Les résultats sont utilisés pour valider les modèles de balistique intérieure.
+
+\section{Représentation en simulation}
+
+\begin{simulation}
+
+Les simulateurs calculent à chaque pas de temps la force exercée sur le
+projectile, puis en déduisent son accélération, sa vitesse et sa position.
+
+Cette boucle de calcul est répétée jusqu'à la sortie du projectile.
+
+\end{simulation}
+
+\section{Vers la rotation du projectile}
+
+Dans un canon rayé, le déplacement longitudinal s'accompagne d'une mise en
+rotation imposée par les rayures.
+
+Cette rotation jouera un rôle essentiel dans la stabilité du projectile après
+sa sortie du canon.
+
+\section{À retenir}
+
+\begin{aretenir}
+
+\begin{itemize}
+    \item Les gaz accélèrent le projectile tout au long de son parcours.
+    \item L'accélération dépend de la force résultante exercée sur le projectile.
+    \item Les frottements et les rayures consomment une partie de l'énergie.
+    \item La vitesse augmente jusqu'à la sortie du canon.
+    \item La rotation est acquise simultanément au mouvement longitudinal.
+\end{itemize}
+
+\end{aretenir}

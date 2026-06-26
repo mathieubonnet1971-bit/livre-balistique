@@ -366,3 +366,12 @@ OLD
 64 — Les désignations commerciales
 65 — Synthèse des munitions de chasse
 
+
+
+-------------------------------
+
+
+⚛, ⚙ ou 📐
+
+
+
