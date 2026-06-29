@@ -1,25 +1,25 @@
-tikz_ballistics.tex
+% Bibliothèque TikZ pour le livre de balistique
 
 %==========================
 % Eléments
 %==========================
 
-\BallisticCanon
-\BallisticProjectile
-\BallisticCase
-\BallisticPrimer
-\BallisticPowder
-\BallisticGas
-\BallisticPressureArrow
-\BallisticForceArrow
+%\BallisticCanon
+%\BallisticProjectile
+%\BallisticCase
+%\BallisticPrimer
+%\BallisticPowder
+%\BallisticGas
+%\BallisticPressureArrow
+%\BallisticForceArrow
 
 %==========================
 % Phénomènes
 %==========================
 
-\DrawPressureField
-\DrawRifling
-\DrawTimeline
+%\DrawPressureField
+%\DrawRifling
+%\DrawTimeline
 
 %==========================
 % Styles
@@ -31,4 +31,25 @@ tikz_ballistics.tex
     steel/.style={...},
     pressure/.style={...}
 }
+
+
+\newcommand{\DrawRifling}[2]{%
+    % #1 : début
+    % #2 : fin
+
+% Rayures supérieures
+\foreach \x in {#1,0.5,...,#2}
+{
+    \draw[gray!70,line width=0.4pt]
+        (\x,0.35) -- ++(0.25,-0.10);
+}
+
+% Rayures inférieures
+\foreach \x in {#1,0.5,...,#2}
+{
+    \draw[gray!70,line width=0.4pt]
+        (\x,-0.35) -- ++(0.25,0.10);
+}
+}
+
 

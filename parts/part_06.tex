@@ -1,8 +1,6 @@
-% Laisser le dernier chapitre de la précédente partie afin d'éviter des problèmes de décalage de couleur dans les entêtes/pieds de page (décalage entre pages).
+% Laisser le "faux"" chapitre afin d'éviter des problèmes de décalage de couleur dans les entêtes/pieds de page (décalage de couleur entre pages d'une même partie).
 
-    \chapter{Synthèse des munitions de chasse}
-    \label{chap:synthese_munitions_chasse}
-    \input{parts/part05_munitions/chapitre_65_synthese_munitions_chasse}
+\chapter*{}
 
 \cleardoublepage
 \SetHeaderColor{Part6Color}
@@ -38,5 +36,9 @@
     \chapter{L'accélération du projectile dans le canon}
     \label{chap:acceleration_projectile_canon}
     \input{parts/part06_balistique_interieure/chapitre_71_acceleration_projectile_canon}
+
+    \chapter{La rotation du projectile}
+    \label{chap:rotation_projectile}
+    \input{parts/part06_balistique_interieure/chapitre_72_rotation_projectile}
 
 

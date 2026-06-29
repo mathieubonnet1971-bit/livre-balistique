@@ -72,11 +72,13 @@
 \definecolor{Part3Color}{HTML}{4F7942}
 \definecolor{Part4Color}{HTML}{8B2E2E}
 \definecolor{Part5Color}{HTML}{C26A00}
-\definecolor{Part6Color}{HTML}{A00000}
-\definecolor{Part7Color}{HTML}{2E75B6}
+\definecolor{Part6Color}{HTML}{C41E3A}
+\definecolor{Part7Color}{HTML}{5F9EA0}
 \definecolor{Part8Color}{HTML}{6B4F2A}
 \definecolor{Part9Color}{HTML}{7030A0}
 \definecolor{AnnexColor}{HTML}{888888}
+
+\definecolor{TOC}{HTML}{BBBBBB}
 
 \definecolor{ProjectileColor}{HTML}{00B7EB}
 \definecolor{GasColor}{HTML}{B31B1B}
@@ -122,7 +124,6 @@
 \subsubsectionfont{\color{\CurrentPartColor!70!black}}    % sets colour of subsubsections
 \paragraphfont{\color{\CurrentPartColor!60!black}}        % sets colour of paragraph
 \subparagraphfont{\color{\CurrentPartColor!40!black}}     % sets colour of subparagraph
-
 
 \usepackage{tikzpagenodes}
 \usepackage{everypage}
@@ -182,6 +183,12 @@ inner sep=2.25pt]
 %\renewcommand{\labelitemi}{\ColoredListItemIII}
 %\renewcommand{\labelitemi}{XXX}
 
+
+
+\cleardoublepage
+\SetHeaderColor{TOC}
+\renewcommand{\CurrentPartColor}{TOC}
+
 % TOC
 \makeatletter
 \renewcommand*\l@section{\@dottedtocline{1}{1.5em}{4em}}
@@ -238,6 +245,10 @@ Mathieu Bonnet
 
 \mainmatter
 
+\input{styles/tikz_ballistics.tex}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \input{parts/part_01.tex}
 %\input{parts/part_02.tex}
 %\input{parts/part_03.tex}
@@ -247,5 +258,6 @@ Mathieu Bonnet
 
 %\input{parts/part_14.tex}
 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}

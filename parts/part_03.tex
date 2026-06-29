@@ -1,8 +1,6 @@
-% Laisser le dernier chapitre de la précédente partie afin d'éviter des problèmes de décalage de couleur dans les entêtes/pieds de page (décalage entre pages).
+% Laisser le "faux"" chapitre afin d'éviter des problèmes de décalage de couleur dans les entêtes/pieds de page (décalage de couleur entre pages d'une même partie).
 
-    \chapter{Rotation terrestre}
-    \label{chap:rotation_terrestre}
-    \input{parts/part02_atmosphere/chapitre_13_rotation_terrestre.tex}
+\chapter*{}
 
 \cleardoublepage
 \SetHeaderColor{Part3Color}
@@ -46,5 +44,9 @@
     \chapter{Plateformes de tir}
     \label{chap:plateformes_de_tir}
     \input{parts/part03_armes/chapitre_21_plateformes_de_tir}
+
+    \chapter{Systèmes de conduite de tir}
+    \label{chap:systemes_conduite_tir}
+    \input{parts/part03_armes/chapitre_22_systemes_conduite_tir}
 
 

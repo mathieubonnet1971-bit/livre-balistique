@@ -1,5 +1,7 @@
-\appendix
-\part{Annexes}
+% Laisser le "faux"" chapitre afin d'éviter des problèmes de décalage de couleur dans les entêtes/pieds de page (décalage de couleur entre pages d'une même partie).
+
+\chapter*{}
+
 \cleardoublepage
 \SetHeaderColor{AnnexColor}
 \renewcommand{\CurrentPartColor}{AnnexColor}
@@ -8,6 +10,9 @@
 \renewcommand{\CurrentChapterType}{Annexe}
 
 \markboth{Annexes}{Annexes}
+
+\appendix
+\part{Annexes}
 
     \chapter{Influence de l'inclinaison de l'arme (Cant)}
     \label{chap:rotation_arme}

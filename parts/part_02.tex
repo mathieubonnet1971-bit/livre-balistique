@@ -1,8 +1,6 @@
-% Laisser le dernier chapitre de la précédente partie afin d'éviter des problèmes de décalage de couleur dans les entêtes/pieds de page (décalage entre pages).
+% Laisser le "faux"" chapitre afin d'éviter des problèmes de décalage de couleur dans les entêtes/pieds de page (décalage de couleur entre pages d'une même partie).
 
-    \chapter{Mécanique des fluides appliquée}
-    \label{chap:mecanique_des_fluides}
-    \input{parts/part01_fondements/chapitre_05_mecanique_des_fluides}
+\chapter*{}
 
 \cleardoublepage
 \SetHeaderColor{Part2Color}
@@ -43,3 +41,6 @@
     \label{chap:vent}
     \input{parts/part02_atmosphere/chapitre_12_vent.tex}
 
+    \chapter{Rotation terrestre}
+    \label{chap:rotation_terrestre}
+    \input{parts/part02_atmosphere/chapitre_13_rotation_terrestre.tex}
