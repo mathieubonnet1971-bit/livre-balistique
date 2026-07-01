@@ -1,5 +1,6 @@
 % Header
 \def\darkColor{70}
+\def\middleColor{50}
 \def\lightColor{30}
 \newcommand{\SetHeaderColor}[1]{%
 \fancyhead[RE]{%
@@ -28,7 +29,7 @@
 
 % Footer
 \fancyfoot[C]{
-    \begin{tikzpicture}[overlay, remember picture]%
+\begin{tikzpicture}[overlay, remember picture]%
     \fill[#1!\lightColor] (current page.south west) rectangle ($(current page.south east)+(0.5,0.4in)$);
     \node[anchor=south west, text=white, font=\large\scshape, minimum size=0.4in, inner xsep=3mm] at (current page.south west) {\textbf{\mytitle\ --- Partie\ \thepart}};
     \node[anchor=south east, text=white, font=\large\scshape, minimum size=0.4in, inner xsep=3mm] at (current page.south east) {\textbf{\myauthor\ ---\mydate}};

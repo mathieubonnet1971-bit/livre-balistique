@@ -96,7 +96,7 @@
 \colorlet{HeaderColor}{PartColor}
 
 \usepackage{fancyhdr}
-\usepackage{xcolor}
+
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -137,6 +137,20 @@
 \title{\mytitle}
 \author{\myauthor}
 \date{\mydate}
+
+\begin{comment}
+\usepackage[pages=some]{background}
+
+\backgroundsetup{
+scale=1,
+color=black,
+opacity=0.9,
+angle=0,
+contents={%
+  \includegraphics[width=\paperwidth,height=\paperheight]{figures/front-cover}
+  }%
+}
+\end{comment}
 
 \usepackage[x11names,dvipsnames]{xcolor}
 % from https://tex.stackexchange.com/a/167024/121799
@@ -204,32 +218,37 @@ inner sep=2.25pt]
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
 \begin{document}
+% First page
+\begin{titlepage}
+%\BgThispage
 \pagestyle{fancy}
 
-\begin{titlepage}
+\input{cover/front_cover_frame.tex}
+\input{cover/front_cover.tex}
 
 \centering
 
-\vspace*{4cm}
+\vspace*{0cm}
 
-{\Huge\bfseries Manuel de Balistique\par}
+%{\Huge\bfseries Manuel de Balistique\par}
+%{\fontsize{36pt}{36pt}\selectfont\bfseries \textcolor{white}{Manuel de Balistique}\par}
+
 
 \vspace{1cm}
 
-{\Large Principes physiques, armes, projectiles,
-munitions, modélisation et simulation\par}
+%{\fontsize{20pt}{20pt}\selectfont \textcolor{white}{Principes physiques, armes, projectiles, munitions, modélisation et simulation}\par}
 
 \vfill
 
-{\Large Version 0.1 -- Document de travail\par}
+%{\Large Version 0.1 -- Document de travail\par}
 
 \vspace{1cm}
 
-Mathieu Bonnet
+%Mathieu Bonnet
 
 \vspace{1cm}
 
-\today
+%\today
 
 \end{titlepage}
 

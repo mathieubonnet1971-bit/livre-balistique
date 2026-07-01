@@ -1,0 +1,146 @@
+%=========================================================
+% Front cover - Version 1
+%=========================================================
+
+\begin{tikzpicture}[remember picture,overlay]
+
+%---------------------------------------------------------
+% Zone centrale
+%---------------------------------------------------------
+
+\coordinate (C) at ($(current page.center)+(0,1.5cm)$);
+
+%---------------------------------------------------------
+% Axe du projectile
+%---------------------------------------------------------
+
+\draw[
+    gray!60,
+    dashed,
+    line width=0.4pt
+]
+($(C)+(-7,0)$)
+--
+($(C)+(7,0)$);
+
+\node[
+    above right,
+    gray!70
+]
+at ($(C)+(6.2,0)$)
+{\small Axe du projectile};
+
+%---------------------------------------------------------
+% Projectile
+%---------------------------------------------------------
+
+\begin{scope}[shift={(C)},rotate=6]
+
+\draw[
+    line width=1.2pt,
+    white
+]
+(-5,0)
+.. controls (-4.3,0.55) and (-2.2,0.55)
+.. (-0.2,0.55)
+--
+(3.6,0.55)
+.. controls (4.2,0.55) and (4.8,0.25)
+.. (5.2,0)
+.. controls (4.8,-0.25) and (4.2,-0.55)
+.. (3.6,-0.55)
+--
+(-0.2,-0.55)
+.. controls (-2.2,-0.55) and (-4.3,-0.55)
+.. (-5,0);
+
+% Axe interne
+
+\draw[
+gray!50
+]
+(-5,0)
+--
+(5.2,0);
+
+% Centre de gravité
+
+\fill[Part6Color]
+(-0.8,0)
+circle(2pt);
+
+\node[
+above,
+Part6Color
+]
+at (-0.8,0.1)
+{\scriptsize CG};
+
+% Centre de pression
+
+\fill[Part7Color]
+(2.3,0)
+circle(2pt);
+
+\node[
+below,
+Part7Color
+]
+at (2.3,-0.1)
+{\scriptsize CP};
+
+\end{scope}
+
+%---------------------------------------------------------
+% Trajectoire
+%---------------------------------------------------------
+
+\draw[
+Part7Color,
+line width=1.4pt
+]
+($(C)+(-6,-5)$)
+.. controls
+($(C)+(-2,-3.6)$)
+and
+($(C)+(2,-4.5)$)
+..
+($(C)+(6,-2.8)$);
+
+%---------------------------------------------------------
+% Titre
+%---------------------------------------------------------
+
+\node[
+text=white,
+font=\bfseries\fontsize{20}{22}\selectfont
+]
+at ($(current page.north)+(0,-4.2cm)$)
+{MANUEL};
+
+\node[
+text=white,
+font=\bfseries\fontsize{34}{36}\selectfont
+]
+at ($(current page.north)+(0,-5.4cm)$)
+{BALISTIQUE};
+
+\node[
+text=gray!40,
+font=\Large
+]
+at ($(current page.north)+(0,-6.4cm)$)
+{Principes physiques --- Simulation --- Essais};
+
+%---------------------------------------------------------
+% Ligne inférieure
+%---------------------------------------------------------
+
+\node[
+text=gray!60,
+font=\large
+]
+at ($(current page.south)+(0,2.0cm)$)
+{Munitions \qquad • \qquad Intérieure \qquad • \qquad Extérieure \qquad • \qquad Terminale};
+
+\end{tikzpicture}
